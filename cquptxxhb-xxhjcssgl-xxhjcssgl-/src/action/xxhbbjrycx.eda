@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="信息化办编辑人员查询" displayRef="biz:xxhbbjrycx" displayRefInclude="id,USERID,DWJC,MAILACC,SJ,BGDH,queryopt" name="xxhbbjrycx" paramRef="biz:xxhbbjrycx" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select DISTINCT #auto[select]&#xD;
+from T_MAILMAINTAIN_INFO&#xD;
+LEFT JOIN T_XG_DW  ON T_MAILMAINTAIN_INFO.DWDM = T_XG_DW.DWDM&#xD;
+LEFT JOIN T_XXB_XXHJCSS_JBXX ON T_MAILMAINTAIN_INFO.USERID = T_XXB_XXHJCSS_JBXX.SFRZH&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

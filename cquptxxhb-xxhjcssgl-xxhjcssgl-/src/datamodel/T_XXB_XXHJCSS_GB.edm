@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_GB" queryOrder="" type="table">
+    <item caption="" colName="WID" foreignName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="基础设施ID" colName="JCSSID" foreignName="" length="100" name="JCSSID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="0be51edf-5579-4b23-b065-c8c6d3f37dc8"/>
+      <attribute name="web.grid.width" value="200px"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="申请人" colName="SQR" foreignName="" groupName="" length="50" name="SQR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.width" value="80px"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="13e9a820-55cc-42b9-bfe9-7350587b7a24"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="searchColumn" value=""/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+    </item>
+    <item caption="计划关闭时间" colName="JHGBSJ" foreignName="" groupName="" length="7" name="JHGBSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.format" value="yyyy-MM-dd HH:mm:ss"/>
+      <attribute name="web.xtype" value="date-range"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.grid.width" value="120px"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.form.xtype" value="date-range"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+      <attribute name="web.hidden" value="false"/>
+    </item>
+    <item caption="理由" colName="LY" foreignName="" groupName="" length="300" name="LY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="textarea"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.checkSize" value="160"/>
+    </item>
+    <item caption="提醒确认" colName="TXQR" length="1000" name="TXQR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="checkboxlist"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="7d8dde0a-254f-461f-993f-1349ca76a718"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.xtype" value="checkboxlist"/>
+    </item>
+    <rowFactors>
+      <rowFactor id="47f14915-603b-42c5-9872-9290632aaa2c" name="xtgly">
+        <sql>T_XXB_XXHJCSS_GB.SQR=${custom.currentUserId}</sql>
+      </rowFactor>
+      <rowFactor id="161ddf42-3f05-42d9-9a1a-96115c552ad8" name="xxhlly">
+        <sql>(&#xD;
+			SELECT&#xD;
+			(CASE B.CC WHEN '3' THEN B.LS ELSE A.SZDWDM END)SZDWDM&#xD;
+			FROM&#xD;
+				T_JZG A,T_ZXBZ_DW B&#xD;
+			WHERE&#xD;
+				A.SZDWDM=B.DM AND A.ZGH = T_XXB_XXHJCSS_GB.SQR&#xD;
+		) IN (&#xD;
+			SELECT&#xD;
+				DWDM&#xD;
+			FROM&#xD;
+				T_YXFZR&#xD;
+			WHERE&#xD;
+				T_YXFZR.ZGH =${custom.currentUserId}&#xD;
+			AND T_YXFZR.JS = '信息化联络员'&#xD;
+		)</sql>
+      </rowFactor>
+      <rowFactor id="7d720146-ef91-424e-92a4-f9581811e15b" name="bmxxhfgld">
+        <sql>(&#xD;
+			SELECT&#xD;
+			(CASE B.CC WHEN '3' THEN B.LS ELSE A.SZDWDM END)SZDWDM&#xD;
+			FROM&#xD;
+				T_JZG A,T_ZXBZ_DW B&#xD;
+			WHERE&#xD;
+				A.SZDWDM=B.DM AND A.ZGH = T_XXB_XXHJCSS_GB.SQR&#xD;
+		) IN (&#xD;
+			SELECT&#xD;
+				DWDM&#xD;
+			FROM&#xD;
+				T_YXFZR&#xD;
+			WHERE&#xD;
+				T_YXFZR.ZGH =${custom.currentUserId}&#xD;
+			AND T_YXFZR.JS = '部门信息化分管领导'&#xD;
+		)</sql>
+      </rowFactor>
+      <rowFactor id="ae5432b6-30d6-4b53-9e8a-b261ba7431d6" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="2f8dabf6-c0b4-4a01-83d9-aac7ece65fe2" name="xxhbld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </dataModel>
+</model:Model>

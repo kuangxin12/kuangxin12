@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eterna-config>
+	<factory>
+		<objs>
+
+			<builder name="instr" caption="模糊查询"
+				generator="self.micromagic.util.TemplateBuilder">
+				<attribute name="template"
+					value="instr([C0],? ) >0" />
+			</builder>
+
+		</objs>
+	</factory>
+</eterna-config>

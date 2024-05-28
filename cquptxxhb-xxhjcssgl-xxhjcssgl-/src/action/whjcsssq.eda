@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="维护基础设施申请" displayRef="biz:whsq" displayRefInclude="WID,SQR,SQRY,WHJCSS,WHRYXM,LXDH,JHWHSJ,WHSJ,JCSSID,LY" name="whjcsssq" paramRef="biz:whsq" paramRefInclude="WID,SQR,JCSSID,WHJCSS" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from whsq&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

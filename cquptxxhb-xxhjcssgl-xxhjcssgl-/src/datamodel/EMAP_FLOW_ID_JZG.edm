@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="EMAP_FLOW_ID_JZG" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="40" name="WID" pK="false" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="教职工编号" colName="JZGBH" length="20" name="JZGBH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="职工号" colName="ZGH" length="20" name="ZGH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="姓名" colName="XM" length="90" name="XM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="姓名拼音" colName="XMPY" length="90" name="XMPY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="曾用名" colName="CYM" length="90" name="CYM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="性别" colName="XBDM" length="10" name="XBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="出生日期" colName="CSRQ" length="10" name="CSRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="年龄" colName="NL" length="19" name="NL" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="出生地" colName="CSDDM" length="10" name="CSDDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="籍贯" colName="JGDM" length="10" name="JGDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="国家(地区)" colName="GJDQDM" length="10" name="GJDQDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="民族" colName="MZDM" length="10" name="MZDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="身份证件类型" colName="SFZJLXDM" length="10" name="SFZJLXDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="身份证件号" colName="SFZJH" length="20" name="SFZJH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="港澳台侨" colName="GATQDM" length="10" name="GATQDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="健康状况" colName="JKZKDM" length="10" name="JKZKDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="婚姻状况" colName="HYZKDM" length="10" name="HYZKDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="参加工作年月" colName="CJGZRQ" length="10" name="CJGZRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="从教年月" colName="CJRQ" length="10" name="CJRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="户口所在地" colName="HKSZD" length="180" name="HKSZD" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="政治面貌" colName="ZZMMDM" length="10" name="ZZMMDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="参加党派日期" colName="CJDPRQ" length="10" name="CJDPRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="第二党派" colName="DEDPDM" length="10" name="DEDPDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="第二党派日期" colName="DEDPRQ" length="10" name="DEDPRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="来校年月" colName="LXRQ" length="10" name="LXRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="所在单位" colName="SZDWDM" length="20" name="SZDWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="编制类别" colName="BZLBDM" length="10" name="BZLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="教职工来源" colName="JZGLYDM" length="10" name="JZGLYDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="教职工类别" colName="JZGLBDM" length="10" name="JZGLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="聘任类别" colName="PRLBDM" length="10" name="PRLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="用人方式" colName="YRFSDM" length="10" name="YRFSDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="个人身份" colName="GRSFDM" length="10" name="GRSFDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="导师类别" colName="DSLBDM" length="10" name="DSLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="导师聘任年月" colName="DSPRRQ" length="10" name="DSPRRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工资卡号" colName="GZKH" length="20" name="GZKH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="当前状态" colName="DQZTDM" length="10" name="DQZTDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="状态变化日期" colName="ZTBHRQ" length="10" name="ZTBHRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="最高学历" colName="ZGXLDM" length="10" name="ZGXLDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="毕业年月" colName="BYRQ" length="10" name="BYRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="毕业学校" colName="BYXX" length="180" name="BYXX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="最高学位" colName="ZGXWDM" length="10" name="ZGXWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="授学位年月" colName="SXWRQ" length="10" name="SXWRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="授予学位单位" colName="SYXWDW" length="180" name="SYXWDW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="教师资格证号" colName="JSZGZH" length="30" name="JSZGZH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="教师资格获得日期" colName="JSZGHDRQ" length="10" name="JSZGHDRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="学科类别" colName="XKLBDM" length="10" name="XKLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="一级学科" colName="YJXKDM" length="10" name="YJXKDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="二级学科" colName="EJXKDM" length="10" name="EJXKDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="研究方向" colName="YJFX" length="90" name="YJFX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="党政职务" colName="DZZW" length="300" name="DZZW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="党政职务级别" colName="DZZWJBDM" length="10" name="DZZWJBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="党政职务任职年月" colName="DZZWRZRQ" length="10" name="DZZWRZRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术职务" colName="ZYJSZWDM" length="10" name="ZYJSZWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术职务级别" colName="ZYJSZWJBDM" length="10" name="ZYJSZWJBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术职务评定年月" colName="ZYJSZWPDRQ" length="10" name="ZYJSZWPDRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="聘任专业技术职务" colName="PRZYJSZWDM" length="10" name="PRZYJSZWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="聘任专业技术职务级别" colName="PRZYJSZWJBDM" length="10" name="PRZYJSZWJBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="聘任专业技术职务年月" colName="PRZYJSZWRQ" length="10" name="PRZYJSZWRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工人技术工种" colName="GRJSGZDM" length="10" name="GRJSGZDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工人技术等级" colName="GRJSDJDM" length="10" name="GRJSDJDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工人技术等级评定年月" colName="GRJSDJPDRQ" length="10" name="GRJSDJPDRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术岗位类别" colName="ZYJSGWLBDM" length="10" name="ZYJSGWLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术岗位等级" colName="ZYJSGWLBDJDM" length="10" name="ZYJSGWLBDJDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术岗位聘任年月" colName="ZYJSGWPRRQ" length="10" name="ZYJSGWPRRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="管理岗位等级" colName="GLGWDJDM" length="10" name="GLGWDJDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="管理岗位聘任日期" colName="GLGWPRRQ" length="10" name="GLGWPRRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="主要岗位" colName="ZYGWDM" length="10" name="ZYGWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工勤岗位等级" colName="GQGWDJDM" length="10" name="GQGWDJDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工勤岗位聘任日期" colName="GQGWPRRQ" length="10" name="GQGWPRRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="校聘岗位" colName="XPGWDM" length="10" name="XPGWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否双肩挑" colName="SFSJT" length="10" name="SFSJT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="双肩挑所在单位" colName="SJTSZDWDM" length="10" name="SJTSZDWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="有效通信地址" colName="YXTXDZ" length="180" name="YXTXDZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="有效邮政编码" colName="YXYZBM" length="10" name="YXYZBM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="手机" colName="SJ" length="30" name="SJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="办公联系电话" colName="BGLXDH" length="30" name="BGLXDH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="电子信箱" colName="DZXX" length="40" name="DZXX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="家庭电话" colName="JTDH" length="30" name="JTDH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="紧急联系人姓名" colName="JJLXRXM" length="90" name="JJLXRXM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="紧急联系人电话" colName="JJLXRDH" length="30" name="JJLXRDH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备注" colName="BZ" length="600" name="BZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="同步日期" colName="TBRQ" length="7" name="TBRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="同步操作" colName="TBLX" length="10" name="TBLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作日期" colName="CZRQ" length="7" name="CZRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentDatetime"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="操作者" colName="CZZ" length="30" name="CZZ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentUserId"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="操作者姓名" colName="CZZXM" length="90" name="CZZXM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentUserName"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="个人简介" colName="GRJJ" length="4000" name="GRJJ" type="BigString">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="管理岗位" colName="GLGW" length="10" name="GLGW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="专业技术岗位" colName="ZYJSGW" length="10" name="ZYJSGW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="工勤岗位" colName="GQGW" length="10" name="GQGW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="结婚时间" colName="JHSJ" length="20" name="JHSJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="户口性质" colName="HKXZ" length="10" name="HKXZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="数据标识" colName="SJBS" length="10" name="SJBS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否持有绿卡" colName="SFCYLK" length="10" name="SFCYLK" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="绿卡国别" colName="LKGB" length="10" name="LKGB" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="身高" colName="SG" length="30" name="SG" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="血型" colName="XXDM" length="1" name="XXDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="雇员等级" colName="GYDJ" length="30" name="GYDJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否调研员" colName="SFDYY" length="10" name="SFDYY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否产业人员" colName="SFCYRY" length="10" name="SFCYRY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="所学专业" colName="SXZY" length="90" name="SXZY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="预计离退休日期" colName="YJLTXRQ" length="20" name="YJLTXRQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否本校毕业" colName="SFBXBY" length="10" name="SFBXBY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用01" colName="BY01" length="1000" name="BY01" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用02" colName="BY02" length="1000" name="BY02" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用03" colName="BY03" length="1000" name="BY03" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用04" colName="BY04" length="1000" name="BY04" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用05" colName="BY05" length="1000" name="BY05" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用06" colName="BY06" length="1000" name="BY06" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用07" colName="BY07" length="1000" name="BY07" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用08" colName="BY08" length="1000" name="BY08" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用09" colName="BY09" length="1000" name="BY09" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用10" colName="BY10" length="1000" name="BY10" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用11" colName="BY11" length="1000" name="BY11" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用12" colName="BY12" length="1000" name="BY12" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用13" colName="BY13" length="1000" name="BY13" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用14" colName="BY14" length="1000" name="BY14" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用15" colName="BY15" length="1000" name="BY15" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用16" colName="BY16" length="1000" name="BY16" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用17" colName="BY17" length="1000" name="BY17" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用18" colName="BY18" length="1000" name="BY18" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用19" colName="BY19" length="1000" name="BY19" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="备用20" colName="BY20" length="1000" name="BY20" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="辅导员类别" colName="FDYLBDM" length="10" name="FDYLBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否为本科生上课" colName="SFWBKSSK" length="10" name="SFWBKSSK" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="海外经历" colName="HWJL" length="10" name="HWJL" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否专职从事心理咨询工作" colName="SFZZCSXLZXGZ" length="10" name="SFZZCSXLZXGZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否持有心理咨询资格证书" colName="SFCYXLZXZGZS" length="10" name="SFCYXLZXZGZS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否双师型教师" colName="SFSSXJS" length="10" name="SFSSXJS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="企业工作(实践)时长" colName="QYGZSC" length="10" name="QYGZSC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="教师类型" colName="JSLX" length="10" name="JSLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="人员属性" colName="PROPERTY" length="100" name="PROPERTY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="过期时间" colName="EXPIREDATE" length="7" name="EXPIREDATE" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="临时组ID" colName="IPT_GROUPID" length="10" name="IPT_GROUPID" type="long">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否独生子女" colName="SFDSZN" length="1" name="SFDSZN" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="微信号" colName="WXH" length="40" name="WXH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

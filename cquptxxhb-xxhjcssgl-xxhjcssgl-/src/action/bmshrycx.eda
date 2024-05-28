@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="部门审核人员查询" displayRef="model:T_XXB_XXHJCSS_BMSHRY" displayRefInclude="WID,JSLX,SFRZH,XM,DWDM" name="bmshrycx" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select]&#xD;
+from t_xxb_xxhjcss_bmshry&#xD;
+LEFT JOIN t_jzg&#xD;
+on t_xxb_xxhjcss_bmshry.SFRZH=T_JZG.ZGH</sql>
+  </actionModel>
+</model:Model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="8bb3f8a3-3100-47e9-95f6-b53a9f409b0f">
+    <item name="sqr" type="String"/>
+    <item name="shr" type="String"/>
+  </bizModel>
+  <actionModel caption="查询是否为同一部门" displayRef="model:T_JZG" displayRefInclude="SZDWDM" displayRefPath="src/datamodel/T_JZG.edm" displayRefPrj="xxhjcssgl" name="cxsfwtybm" paramFixRef="8bb3f8a3-3100-47e9-95f6-b53a9f409b0f" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from t_jzg  &#xD;
+where zgh=? &#xD;
+and SZDWDM IN (select SHR.DWDM from t_yxfzr shr where  SHR.zgh=?)</sql>
+  </actionModel>
+</model:Model>

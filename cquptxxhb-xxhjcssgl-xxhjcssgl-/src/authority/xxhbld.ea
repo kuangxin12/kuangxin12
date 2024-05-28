@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role:Roles xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:role="http://www.wisedu.com/emap/model/role">
+  <role id="xxhbld" name="信息化办领导" type="DATA">
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" factor="xxhbld" id="76c3d2d0-6dbd-41de-8ada-10acc4bfb4f2" model="T_XXB_XXHJCSS_BMSHRY" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_GB.edm" factor="xxhbld" id="2f8dabf6-c0b4-4a01-83d9-aac7ece65fe2" model="T_XXB_XXHJCSS_GB" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" factor="xxhbld" id="fa5a6aed-18ec-4041-a8e5-96694c5e828f" model="T_XXB_XXHJCSS_JBXX" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_NS.edm" factor="xxhbld" id="acf89f56-e21b-4c54-89eb-0ce37a29da94" model="T_XXB_XXHJCSS_NS" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_WH.edm" factor="xxhbld" id="4a9859a1-9511-4f9f-bf90-84fcf1083f2c" model="T_XXB_XXHJCSS_WH" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" factor="xxhbld" id="c603c13b-dd33-4379-b242-54314fc47f34" model="T_XXB_XXHJCSS_ZRRBGJL" prjRef="xxhjcssgl"/>
+  </role>
+</role:Roles>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="年审记录" displayRef="model:T_XXB_XXHJCSS_JBXXLS" displayRefInclude="WID,ZT,WLJCSSWID,NSJZRQ,NSND,SQLX" name="nsjl" paramRef="model:T_XXB_XXHJCSS_JBXXLS" paramRefInclude="WID,ZT,WLJCSSWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXXLS&#xD;
+where SQLX = '年审'&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

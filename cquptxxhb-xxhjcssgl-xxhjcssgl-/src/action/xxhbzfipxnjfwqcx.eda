@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="信息化办重复ip虚拟机服务器查询" displayRef="biz:xxhblbcx" name="xxhbzfipxnjfwqcx" paramRef="biz:xxhblbcx" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>SELECT&#xD;
+	#auto[select] &#xD;
+FROM&#xD;
+	T_XXB_XXHJCSS_JBXX&#xD;
+WHERE&#xD;
+zt != 2 and&#xD;
+	xnj_ip IN (&#xD;
+		SELECT&#xD;
+			ip&#xD;
+		FROM&#xD;
+			(&#xD;
+				SELECT&#xD;
+					ip,&#xD;
+					COUNT (ip) AS num&#xD;
+				FROM&#xD;
+					(&#xD;
+						SELECT&#xD;
+							CONCAT (XNJ_IP, TGFWQ_IP) AS IP&#xD;
+						FROM&#xD;
+							T_XXB_XXHJCSS_JBXX&#xD;
+						WHERE&#xD;
+							zt ！ = 2&#xD;
+					) A&#xD;
+				GROUP BY&#xD;
+					ip&#xD;
+			) A&#xD;
+		WHERE&#xD;
+			A .num > 1&#xD;
+	)&#xD;
+OR tgfwq_ip IN (&#xD;
+	SELECT&#xD;
+		ip&#xD;
+	FROM&#xD;
+		(&#xD;
+			SELECT&#xD;
+				ip,&#xD;
+				COUNT (ip) AS num&#xD;
+			FROM&#xD;
+				(&#xD;
+					SELECT&#xD;
+						CONCAT (XNJ_IP, TGFWQ_IP) AS IP&#xD;
+					FROM&#xD;
+						T_XXB_XXHJCSS_JBXX&#xD;
+					WHERE&#xD;
+						zt ！ = 2&#xD;
+				) A&#xD;
+			GROUP BY&#xD;
+				ip&#xD;
+		) A&#xD;
+	WHERE&#xD;
+		A .num > 1&#xD;
+)&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

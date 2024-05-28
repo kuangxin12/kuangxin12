@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="关闭基础设施申请" displayRef="biz:gbsq" displayRefInclude="WID,SQR,SQRY,GBJCSS,JCSSID,JHGBSJ,GBSJ,LY,TXQR" name="gbjcsssq" paramRef="biz:gbsq" paramRefInclude="WID,JCSSID,GBJCSS,SQR" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from gbsq&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

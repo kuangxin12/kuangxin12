@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="cc618679-0ed5-447b-9b8f-29c4b2ad2f28">
+    <item name="ZT" type="double"/>
+  </bizModel>
+  <actionModel authorityIndex="" caption="修改状态" conditionIndex="" displayRef="" displayRefInclude="" displayRefPath="" displayRefPrj="" name="xgzt" orderIndex="" paramFixRef="cc618679-0ed5-447b-9b8f-29c4b2ad2f28" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefExtra="" paramRefExtraPath="" paramRefExtraPrj="" paramRefInclude="WID,PWID" paramRefPath="" paramRefPrj="" saveLog="true" totalCountType="AUTO" type="UPDATE">
+    <sql>update T_XXB_XXHJCSS_JBXX set ZT = ? &#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

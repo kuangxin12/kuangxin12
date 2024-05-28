@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更后管理员查询" displayRef="biz:bghgly" displayRefInclude="id,ZGH,DWJC,queryopt" name="bghglycx" paramRef="biz:bghgly" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select DISTINCT #auto[select]&#xD;
+from T_JZG&#xD;
+LEFT JOIN T_XG_DW  ON T_JZG.SZDWDM = T_XG_DW.DWDM&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

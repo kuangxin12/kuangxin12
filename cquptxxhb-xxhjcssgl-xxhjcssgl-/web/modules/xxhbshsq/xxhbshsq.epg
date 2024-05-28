@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="xxhbshsq" desc="信息化办审核申请" permissionLevel="">
+    <actions>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmcx" ref="action:bmcx" url="src/action/bmcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_NS_ADD" ref="model:T_XXB_XXHJCSS_NS.ADD" url="src/datamodel/T_XXB_XXHJCSS_NS.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_NS_DELETE" ref="model:T_XXB_XXHJCSS_NS.DELETE" url="src/datamodel/T_XXB_XXHJCSS_NS.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_NS_QUERY" ref="model:T_XXB_XXHJCSS_NS.QUERY" url="src/datamodel/T_XXB_XXHJCSS_NS.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="jcsszxnscx" ref="action:jcsszxnscx" url="src/action/jcsszxnscx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="scns" ref="action:scns" url="src/action/scns.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="whsscx" ref="action:whsscx" url="src/action/whsscx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbshbd" ref="action:xxhbshbd" url="src/action/xxhbshbd.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="ymsqrxg" ref="action:ymsqrxg" url="src/action/ymsqrxg.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_YMSQ_QUERY" ref="model:T_XXB_XXHJCSS_YMSQ.QUERY" url="src/datamodel/T_XXB_XXHJCSS_YMSQ.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BJRZ_QUERY" ref="model:T_XXB_XXHJCSS_BJRZ.QUERY" url="src/datamodel/T_XXB_XXHJCSS_BJRZ.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BJRZ_ADD" ref="model:T_XXB_XXHJCSS_BJRZ.ADD" url="src/datamodel/T_XXB_XXHJCSS_BJRZ.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BJRZ_SAVE" ref="model:T_XXB_XXHJCSS_BJRZ.SAVE" url="src/datamodel/T_XXB_XXHJCSS_BJRZ.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbbjrycx" ref="action:xxhbbjrycx" url="src/action/xxhbbjrycx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbbjbd" ref="action:xxhbbjbd" url="src/action/xxhbbjbd.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhblbcx" ref="action:xxhblbcx" url="src/action/xxhblbcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_XLZD_QUERY" ref="model:T_XXB_XXHJCSS_XLZD.QUERY" url="src/datamodel/T_XXB_XXHJCSS_XLZD.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="pdipzf" ref="action:pdipzf" url="src/action/pdipzf.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbzfipfwqcx" ref="action:xxhbzfipfwqcx" url="src/action/xxhbzfipfwqcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbzfipxnjcx" ref="action:xxhbzfipxnjcx" url="src/action/xxhbzfipxnjcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbzfipxnjfwqcx" ref="action:xxhbzfipxnjfwqcx" url="src/action/xxhbzfipxnjfwqcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

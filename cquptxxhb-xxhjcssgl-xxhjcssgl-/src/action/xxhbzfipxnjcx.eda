@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="信息化办重复ip虚拟机查询" displayRef="biz:xxhblbcx" name="xxhbzfipxnjcx" paramRef="biz:xxhblbcx" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX where zt != 2 and xnj_ip in &#xD;
+(select ip from (SELECT XNJ_IP as ip,count(XNJ_IP) as num FROM T_XXB_XXHJCSS_JBXX where zt ！= 2 GROUP BY XNJ_IP&#xD;
+) a where a.num>1)&#xD;
+#sub[and $]&#xD;
+order BY xnj_ip</sql>
+  </actionModel>
+</model:Model>

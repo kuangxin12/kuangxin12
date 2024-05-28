@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bgqr" order="WID,BGQGLY,BGHGLY,BGTJSJ,JCSSID,YEMAIL,YSJ,YBGDH,XEMAIL,XSJ,XBGDH">
+    <dataModelRef include="WID:WID,BGQGLY:BGQGLY,BGHGLY:BGHGLY,BGTJSJ:BGTJSJ,JCSSID:JCSSID,XEMAIL:XEMAIL,XSJ:XSJ,XBGDH:XBGDH,YEMAIL:YEMAIL,YSJ:YSJ,YBGDH:YBGDH" modelName="model:T_XXB_XXHJCSS_ZRRBGJL" tableAlias="T_XXB_XXHJCSS_ZRRBGJL">
+      <item name="WID" originName="WID"/>
+      <item name="BGQGLY" originName="BGQGLY">
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+      <item name="BGHGLY" originName="BGHGLY">
+        <attribute name="web.form.readonly" value="true"/>
+        <attribute name="web.url" value=""/>
+      </item>
+      <item name="BGTJSJ" originName="BGTJSJ">
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+      <item name="JCSSID" originName="JCSSID">
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+        <attribute name="web.xtype" value="select"/>
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+      <item name="XEMAIL" originName="XEMAIL">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="XSJ" originName="XSJ"/>
+      <item name="XBGDH" originName="XBGDH"/>
+      <item name="YEMAIL" originName="YEMAIL">
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+      <item name="YSJ" originName="YSJ">
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+      <item name="YBGDH" originName="YBGDH">
+        <attribute name="web.form.readonly" value="true"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

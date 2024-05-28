@@ -1,0 +1,16 @@
+<article bh-layout-role="single">
+	<h2>新建</h2>
+	<section>
+		<div id="emapForm"></div>
+		<div id="sm" style="padding:0 10px 30px 12px;"></div>
+		<footer>
+			<div id="app">
+				<emap-flow-toolbar :flowcomment="flow_comment" :onbtnrender="btnfilter"  ref="myflow"
+					:submitformdata="formdata" :defkey="defkey"
+					@action_complete="action_complete" :taskid="taskid"
+					:onverify="btnclick"></emap-flow-toolbar>
+				<div class="bh-clearfix"></div>
+			</div>
+		</footer>
+	</section>
+</article>

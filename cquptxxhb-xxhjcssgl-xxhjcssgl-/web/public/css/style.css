@@ -1,0 +1,20 @@
+.jqx-item{
+ text-align:center;
+}
+.jqx-listitem-state-normal{
+	text-align:left;
+}
+
+a[data-action=applyck],
+a[data-action=guanbick],
+a[data-action=edit],
+a[data-action=bjsqck],
+a[data-action=bjgbck],
+a[data-action=callback],
+a[data-action=audit],
+a[data-action=finishedcallback],
+a[data-action=adelete]
+{
+	color:red;
+}
+

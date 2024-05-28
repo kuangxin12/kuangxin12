@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="信息化办编辑表单" displayRef="biz:xxhbEdit" name="xxhbbjbd" paramRef="biz:xxhbEdit" paramRefInclude="WID,PWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from xxhbsh&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

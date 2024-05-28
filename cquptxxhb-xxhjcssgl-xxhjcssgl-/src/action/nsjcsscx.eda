@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="年审基础设施查询" conditionIndex="1" displayRef="model:T_XXB_XXHJCSS_JBXX" name="nsjcsscx" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="ZT" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <paramRefx conditionIndex="2" include="WID,SQDW,SFRZH,GLYXM,YXQ,PWID" order="2" ref="model:T_XXB_XXHJCSS_JBXX"/>
+    <sql>SELECT #auto[select] &#xD;
+FROM T_XXB_XXHJCSS_JBXX&#xD;
+where (ZT >= 10 #sub[or$]) &#xD;
+and ((EXTRACT(month FROM SYSDATE)= EXTRACT(month FROM YXQ) &#xD;
+     AND EXTRACT(year FROM SYSDATE)= EXTRACT(year FROM YXQ))&#xD;
+     OR (SYSTIMESTAMP > YXQ))&#xD;
+#sub[and $]&#xD;
+</sql>
+    <rowFactors>
+      <rowFactor id="ae94bc02-8be1-48f7-a12e-9eb979ff8e31" name="xtgly">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="083f7cf2-bda7-41a8-95ae-4050aaac227b" name="xxhlly">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="195bf1bc-1ddc-4007-8133-e25e607421bc" name="bmxxhfgld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </actionModel>
+</model:Model>

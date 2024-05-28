@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="index" desc="index" permissionLevel="">
+    <params>
+      <param name="USERID" from="env:custom.currentUserId"/>
+      <param name="USERNAME" from="env:custom.currentUserName"/>
+      <param name="roleId" from="env:custom.currentRole"/>
+    </params>
+    <actions>
+      <action name="EMAP_SAPP_ROLE_RELATION_QUERY" ref="model:EMAP_SAPP_ROLE_RELATION.QUERY" url="src/datamodel/EMAP_SAPP_ROLE_RELATION.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="cxsfwtybm" ref="action:cxsfwtybm" url="src/action/cxsfwtybm.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_YXFZR_QUERY" ref="model:T_YXFZR.QUERY" url="src/datamodel/T_YXFZR.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

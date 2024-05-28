@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="YXQUPDATA" order="WID,PWID,MC,SQDW,LX,ZT,YT,SBFL,SQLX,CK_SFYSQCK,QTSM,CZR,XNJ_CPU,XNJ_NC,XNJ_CZXT,XNJ_SJYP,TGFWQ_NC,TGFWQ_CPU,TGFWQ_PPXH,TGFWQ_CZXT,TGFWQ_XH,SFRZH,GLYXM,YXQ,EMAIL,BGDH,SJ,XNJ_IP,TGFWQ_YM,TGFWQ_SFYZ,TGFWQ_SFYCC,TGFWQ_IP,TGFWQ_JJH,TGFWQ_WZ,CK_DKH,CK_IP,TJSJ">
+    <dataModelRef include="WID:WID,PWID:PWID,MC:MC,SQDW:SQDW,LX:LX,ZT:ZT,YT:YT,SBFL:SBFL,SQLX:SQLX,CK_SFYSQCK:CK_SFYSQCK,QTSM:QTSM,CZR:CZR,XNJ_CPU:XNJ_CPU,XNJ_NC:XNJ_NC,XNJ_CZXT:XNJ_CZXT,XNJ_SJYP:XNJ_SJYP,TGFWQ_NC:TGFWQ_NC,TGFWQ_CPU:TGFWQ_CPU,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_XH:TGFWQ_XH,SFRZH:SFRZH,GLYXM:GLYXM,YXQ:YXQ,EMAIL:EMAIL,BGDH:BGDH,SJ:SJ,XNJ_IP:XNJ_IP,TGFWQ_YM:TGFWQ_YM,TGFWQ_SFYZ:TGFWQ_SFYZ,TGFWQ_SFYCC:TGFWQ_SFYCC,TGFWQ_IP:TGFWQ_IP,TGFWQ_JJH:TGFWQ_JJH,TGFWQ_WZ:TGFWQ_WZ,CK_DKH:CK_DKH,CK_IP:CK_IP,TJSJ:TJSJ" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item name="WID" originName="WID"/>
+      <item name="PWID" originName="PWID"/>
+      <item name="MC" originName="MC"/>
+      <item name="SQDW" originName="SQDW"/>
+      <item name="LX" originName="LX"/>
+      <item name="ZT" originName="ZT"/>
+      <item name="YT" originName="YT"/>
+      <item name="SBFL" originName="SBFL"/>
+      <item name="SQLX" originName="SQLX"/>
+      <item name="CK_SFYSQCK" originName="CK_SFYSQCK"/>
+      <item name="QTSM" originName="QTSM"/>
+      <item name="CZR" originName="CZR"/>
+      <item name="XNJ_CPU" originName="XNJ_CPU"/>
+      <item name="XNJ_NC" originName="XNJ_NC"/>
+      <item name="XNJ_CZXT" originName="XNJ_CZXT"/>
+      <item name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item name="TGFWQ_CZXT" originName="TGFWQ_CZXT"/>
+      <item name="TGFWQ_XH" originName="TGFWQ_XH"/>
+      <item name="SFRZH" originName="SFRZH"/>
+      <item name="GLYXM" originName="GLYXM"/>
+      <item name="YXQ" originName="YXQ">
+        <attribute name="pattern" value=""/>
+        <attribute name="prepare" value="long2TimePre"/>
+      </item>
+      <item name="EMAIL" originName="EMAIL"/>
+      <item name="BGDH" originName="BGDH"/>
+      <item name="SJ" originName="SJ"/>
+      <item name="XNJ_IP" originName="XNJ_IP"/>
+      <item name="TGFWQ_YM" originName="TGFWQ_YM"/>
+      <item name="TGFWQ_SFYZ" originName="TGFWQ_SFYZ"/>
+      <item name="TGFWQ_SFYCC" originName="TGFWQ_SFYCC"/>
+      <item name="TGFWQ_IP" originName="TGFWQ_IP"/>
+      <item name="TGFWQ_JJH" originName="TGFWQ_JJH"/>
+      <item name="TGFWQ_WZ" originName="TGFWQ_WZ"/>
+      <item name="CK_DKH" originName="CK_DKH"/>
+      <item name="CK_IP" originName="CK_IP"/>
+      <item name="TJSJ" originName="TJSJ"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

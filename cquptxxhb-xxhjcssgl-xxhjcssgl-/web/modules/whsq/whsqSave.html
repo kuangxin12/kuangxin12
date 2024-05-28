@@ -1,0 +1,31 @@
+<article bh-layout-role="single">
+    <h2>申请</h2>
+    <section>
+     
+      <div id="emapForm"></div> 
+       <div id ="tsjcss" class="bh-col-md-12 bh-form-groupname bh-mb-24" title="请选择基础设施" bh-role-form-outline="title" style="border:none"></div>
+      <div id = "radiobox"></div>   
+     <div id = "tishi" style="margin:15px;clear: both;"><span style="color:red;font-size:16px">*请通知维护人员带上身份证，信息化办将核实维护人员信息  <span></div>
+    
+    <!--  <iframe id ="flow" title = "flow" width = "100%" 
+      src="" 
+      style="height: 486px;margin:0 auto;display:blod">
+      </iframe>  -->
+     </section>
+    <footer>
+		<!-- <div class="bh-btn bh-btn-primary" id="save" data-action="save">保存</div> -->
+		<div id="app">
+			<emap-flow-toolbar :flowcomment="flow_comment"  ref="myflow"
+					:submitformdata="formdata" 
+					:defkey="defkey" 
+					@action_complete="action_complete" 
+				    :taskid="taskid"
+				    :onverify="btnclick">
+			</emap-flow-toolbar>
+			<div class="bh-clearfix"></div>
+		</div>
+		
+		
+	</footer>
+	
+</article>

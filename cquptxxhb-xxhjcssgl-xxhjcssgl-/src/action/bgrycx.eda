@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更人员查询" displayRef="model:T_JZG" name="bgrycx" paramRef="model:T_JZG" paramRefInclude="ZGH,SZDWDM" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_JZG&#xD;
+#sub[where $]</sql>
+    <rowFactors>
+      <rowFactor id="341c9070-201f-46a0-bb17-6d7af26075a3" name="xtgly">
+        <sql>T_JZG.SZDWDM = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="31152da9-cac9-4ea3-a95d-1205187e698d" name="xxhlly">
+        <sql>T_JZG.SZDWDM = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="d3b3f3aa-59a7-4749-afed-fdb691c96ff8" name="bmfgld">
+        <sql>T_JZG.SZDWDM = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="f72af36f-0c82-48d2-9211-0fe9fa20da2b" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </actionModel>
+</model:Model>

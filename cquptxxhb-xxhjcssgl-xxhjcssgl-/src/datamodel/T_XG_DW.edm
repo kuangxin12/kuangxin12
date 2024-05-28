@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XG_DW" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="40" name="WID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="单位代码" colName="DWDM" length="40" name="DWDM" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位简码" colName="DWJM" length="40" name="DWJM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位标准名称" colName="DWBZMC" length="300" name="DWBZMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位简称" colName="DWJC" length="70" name="DWJC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位英文名" colName="DWYWM" length="300" name="DWYWM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="学生类型代码：1、仅本科生；2、仅研究生；3、混合" colName="XSLXDM" length="1" name="XSLXDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="排序" colName="PX" length="22" name="PX" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否使用" colName="SFSY" length="1" name="SFSY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="同步日期" colName="TBRQ" length="7" name="TBRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="同步操作" colName="TBLX" length="10" name="TBLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作日期" colName="CZRQ" length="7" name="CZRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentDatetime"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="操作者" colName="CZZ" length="30" name="CZZ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentUserId"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="操作者姓名" colName="CZZXM" length="120" name="CZZXM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentUserName"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="forceDefault" value="true"/>
+    </item>
+    <item caption="主页名称" colName="ZYMC" length="255" name="ZYMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

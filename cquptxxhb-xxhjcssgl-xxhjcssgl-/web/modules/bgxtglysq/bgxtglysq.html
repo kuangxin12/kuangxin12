@@ -1,0 +1,80 @@
+﻿<article bh-layout-role="single" class="cs">
+    <h2>申请人变更申请</h2>
+    <section>
+     <div class="bh-col-md-6">
+        <div id="emapAdvancedQuery" >
+      
+        </div>
+        <div class='bh-advancedQuery-groupName'>任务状态：</div>
+		<div class='bh-advancedQuery-groupList bh-label-radio-group'>
+			<div class='bh-label-radio' data-action='query' queryType=''>全部</div>
+			<div class='bh-active bh-label-radio' data-action='query' queryType='1'>审核中</div>
+			<div class='bh-label-radio' data-action='query' queryType='2'>已驳回</div>			
+			<div class='bh-label-radio' data-action='query' queryType='3'>已完成</div>
+			<div class='bh-label-radio' data-action='query' queryType='5'>未通过</div>
+			<div class='bh-label-radio' data-action='query' queryType='4,6'>待提交</div>
+		</div>
+        <div class="bh-mb-16">
+            <div class="bh-btn bh-btn-primary" data-action="add">新增申请</div>
+         <!--    <div class="bh-btn bh-btn-default" data-action="delete">删除</div> -->
+            <div class="bh-btn bh-btn-default" data-action="export">导出</div>
+            <div class="bh-btn bh-btn-default" data-action="custom-column">自定义显示列</div>
+            <div class="bh-btn bh-btn-default" data-action="handbook">操作手册下载</div>
+            <div class="bh-btn bh-btn-default" data-action="czsm">服务说明</div>
+        </div>
+        </div>
+        <div class="bh-col-md-6">
+	        <div style="border:aquamarine solid 2px ;border-radius:10px;height: 150px;width: 98%;">
+				<h2 align="center" style="color:#ff4452 ;margin:10px auto;font-size:25px">您的审核数据<div class="bh-btn bh-btn-primary" data-action="getShData">点击刷新</div></h2>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq1" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">全部</p>
+					</div>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq2" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">审核中</p>
+					</div>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq3" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">已驳回</p>
+					</div>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq4" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">已完成</p>
+					</div>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq5" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">未通过</p>
+					</div>
+					<div style="height:80px;width:14.5%;float: left;background-color: #f5f7f8;margin: 10px 5px;text-align: center;">
+						<p id="bgsq6" style="color: #8b8a64;font-size: 25px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+						<p style="font-size: 13px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">待提交</p>
+					</div>
+			
+			 </div>
+		   </div>  
+		    
+		<div id = "tishi" style="margin-top:10px;clear: both;"><span style="color:#2196F3;font-size:10px;">*查看各环节审核详情请点击【流程状态】<span></div> 
+        <div style="color:red;font-size:10px;margin-bottom:10px;clear: both;">*最新状态为：“未年审，拟关闭”时，可能会导致其他申请操作不能正常提交，请先提交年审申请进行处理。</div> 
+        
+        
+        <div id="emapdatatable"></div>
+        <iframe id="loadFileHide" style="display: none;"></iframe>
+    </section>
+     
+    <aside>
+        <script type="text/template">
+            <!--侧边栏标题-->
+            <h3>详情</h3>
+            <!--侧边栏内容-->
+            <section>
+                <div id="dialogInfoForm"></div>
+            </section>
+            <!--侧边栏页脚-->
+            <footer>
+                <div class="bh-btn bh-btn-primary" id="syddkDetailEdit">编辑</div>
+                <div class="bh-btn bh-btn-default" id="syddkDetailClose">关闭</div>
+            </footer>
+        </script>
+    </aside>
+</article>

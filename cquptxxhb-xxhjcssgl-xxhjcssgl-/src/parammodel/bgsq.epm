@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bgsq" order="WID,BGQGLY,BGHGLY,BGTJSJ,JCSSID,BGHXGLY,XZJCSS,XEMAIL,XSJ,XBGDH,BGQJGLY,YEMAIL,YSJ,YBGDH">
+    <dataModelRef include="WID:WID,BGQGLY:BGQGLY,BGHGLY:BGHGLY,BGTJSJ:BGTJSJ,JCSSID:JCSSID,XEMAIL:XEMAIL,XSJ:XSJ,XBGDH:XBGDH,YEMAIL:YEMAIL,YSJ:YSJ,YBGDH:YBGDH" modelName="model:T_XXB_XXHJCSS_ZRRBGJL" tableAlias="T_XXB_XXHJCSS_ZRRBGJL">
+      <item groupName="变更信息" name="WID" originName="WID"/>
+      <item groupName="变更信息" name="BGQGLY" originName="BGQGLY">
+        <attribute name="web.form.hidden" value="true"/>
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+      </item>
+      <item groupName="变更信息" name="BGHGLY" originName="BGHGLY">
+        <attribute name="web.form.hidden" value="true"/>
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+        <attribute name="web.url" value=""/>
+      </item>
+      <item groupName="变更信息" name="BGTJSJ" originName="BGTJSJ"/>
+      <item groupName="变更信息" name="JCSSID" originName="JCSSID">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item groupName="新管理员信息" name="XEMAIL" originName="XEMAIL"/>
+      <item groupName="新管理员信息" name="XSJ" originName="XSJ"/>
+      <item groupName="新管理员信息" name="XBGDH" originName="XBGDH"/>
+      <item name="YEMAIL" originName="YEMAIL">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="YSJ" originName="YSJ">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="YBGDH" originName="YBGDH">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+    </dataModelRef>
+    <item caption="变更后新申请人" colName="BGHXGLY" custom="true" groupName="变更信息" length="7" name="BGHXGLY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.form.xtype" value="selecttable"/>
+      <attribute name="web.xtype" value="selecttable"/>
+      <attribute name="web.url" value="/sys/xxhjcssgl/modules/bgxtglysq/bghglycx.do?pageNumber=1"/>
+      <attribute name="web.form.placeholder" value=""/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+    </item>
+    <item caption="选择基础设施" colName="XZJCSS" custom="true" groupName="变更信息" name="XZJCSS" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="select"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="变更前申请人" colName="BGQJGLY" custom="true" groupName="变更信息" name="BGQJGLY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

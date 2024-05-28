@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更基础设施" displayRef="model:T_XXB_XXHJCSS_JBXX" name="bgjcss" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="PWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <rowFactors>
+      <rowFactor id="8cde232c-2ea1-4d43-906b-b7e74bb08007" name="xtgly">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

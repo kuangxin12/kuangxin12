@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bgshxx" order="WID,JCSSID,BGTJSJ,BGQGLY,YEMAIL,YSJ,YBGDH,BGHGLY,XEMAIL,XSJ,XBGDH">
+    <dataModelRef include="WID:WID,JCSSID:JCSSID,BGQGLY:BGQGLY,BGHGLY:BGHGLY,BGTJSJ:BGTJSJ,XEMAIL:XEMAIL,XSJ:XSJ,XBGDH:XBGDH,YEMAIL:YEMAIL,YSJ:YSJ,YBGDH:YBGDH" modelName="model:T_XXB_XXHJCSS_ZRRBGJL" tableAlias="T_XXB_XXHJCSS_ZRRBGJL">
+      <item name="WID" originName="WID"/>
+      <item name="JCSSID" originName="JCSSID">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item groupName="原申请人信息" name="BGQGLY" originName="BGQGLY"/>
+      <item groupName="新申请人信息" name="BGHGLY" originName="BGHGLY"/>
+      <item name="BGTJSJ" originName="BGTJSJ"/>
+      <item name="XEMAIL" originName="XEMAIL"/>
+      <item name="XSJ" originName="XSJ"/>
+      <item name="XBGDH" originName="XBGDH"/>
+      <item name="YEMAIL" originName="YEMAIL"/>
+      <item name="YSJ" originName="YSJ"/>
+      <item name="YBGDH" originName="YBGDH"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

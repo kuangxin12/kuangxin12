@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="61abf4cf-4c6d-45f5-bc27-99f39e3c8aaa">
+    <item name="SQR" type="String"/>
+  </bizModel>
+  <actionModel authorityIndex="" caption="域名申请人修改" conditionIndex="" displayRef="" displayRefInclude="" displayRefPath="" displayRefPrj="" name="ymsqrxg" orderIndex="" paramFixRef="61abf4cf-4c6d-45f5-bc27-99f39e3c8aaa" paramRef="model:T_XXB_XXHJCSS_YMSQ" paramRefExtra="" paramRefExtraPath="" paramRefExtraPrj="" paramRefInclude="WID,JCSSID" paramRefPath="" paramRefPrj="" saveLog="true" totalCountType="AUTO" type="UPDATE">
+    <sql>update T_XXB_XXHJCSS_YMSQ set SQR = ? &#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

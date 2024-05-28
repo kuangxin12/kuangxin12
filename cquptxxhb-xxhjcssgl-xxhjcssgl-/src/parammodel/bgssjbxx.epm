@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bgssjbxx" order="WID,MC,SQDW,LX,YT,GLYXM,SFRZH,EMAIL,BGDH,SJ,TGFWQ_PPXH,TGFWQ_CZXT,TGFWQ_NC,CK_SFYSQCK,XNJ_CZXT,CK_IP,CK_DKH,WID_1,BGHGLY,BGQGLY,BGTJSJ,XEMAIL,XSJ,XBGDH,JCSSID,PWID,XNJ_SJYP,TGFWQ_CPU,TGFWQ_XH">
+    <dataModelRef include="WID:WID,MC:MC,SQDW:SQDW,LX:LX,YT:YT,GLYXM:GLYXM,SFRZH:SFRZH,EMAIL:EMAIL,BGDH:BGDH,SJ:SJ,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_NC:TGFWQ_NC,CK_SFYSQCK:CK_SFYSQCK,XNJ_CZXT:XNJ_CZXT,CK_IP:CK_IP,CK_DKH:CK_DKH,PWID:PWID,XNJ_SJYP:XNJ_SJYP,TGFWQ_CPU:TGFWQ_CPU,TGFWQ_XH:TGFWQ_XH" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item name="WID" originName="WID"/>
+      <item name="MC" originName="MC"/>
+      <item name="SQDW" originName="SQDW"/>
+      <item name="LX" originName="LX"/>
+      <item name="YT" originName="YT"/>
+      <item groupName="原管理员信息" name="GLYXM" originName="GLYXM"/>
+      <item groupName="原管理员信息" name="SFRZH" originName="SFRZH"/>
+      <item groupName="原管理员信息" name="EMAIL" originName="EMAIL"/>
+      <item groupName="原管理员信息" name="BGDH" originName="BGDH"/>
+      <item groupName="原管理员信息" name="SJ" originName="SJ"/>
+      <item name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item name="TGFWQ_CZXT" originName="TGFWQ_CZXT"/>
+      <item name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item groupName="基本信息" name="CK_SFYSQCK" originName="CK_SFYSQCK"/>
+      <item groupName="基本信息" name="XNJ_CZXT" originName="XNJ_CZXT"/>
+      <item name="CK_IP" originName="CK_IP"/>
+      <item name="CK_DKH" originName="CK_DKH"/>
+      <item name="PWID" originName="PWID"/>
+      <item name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item name="TGFWQ_XH" originName="TGFWQ_XH"/>
+    </dataModelRef>
+    <dataModelRef include="WID:WID_1,BGHGLY:BGHGLY,BGQGLY:BGQGLY,BGTJSJ:BGTJSJ,XEMAIL:XEMAIL,XSJ:XSJ,XBGDH:XBGDH,JCSSID:JCSSID" modelName="model:T_XXB_XXHJCSS_ZRRBGJL" tableAlias="T_XXB_XXHJCSS_ZRRBGJL">
+      <item groupName="变更信息" name="WID_1" originName="WID"/>
+      <item groupName="变更信息" name="BGHGLY" originName="BGHGLY"/>
+      <item groupName="原管理员信息" name="BGQGLY" originName="BGQGLY"/>
+      <item groupName="变更信息" name="BGTJSJ" originName="BGTJSJ"/>
+      <item groupName="变更信息" name="XEMAIL" originName="XEMAIL"/>
+      <item groupName="变更信息" name="XSJ" originName="XSJ"/>
+      <item groupName="变更信息" name="XBGDH" originName="XBGDH"/>
+      <item groupName="变更信息" name="JCSSID" originName="JCSSID"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

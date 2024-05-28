@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="xxhbbjrycx" order="id,USERID,USERNAME,DWJC,MAILACC,BGDH,SJ,queryopt">
+    <dataModelRef include="USERID:USERID,USERNAME:USERNAME,MAILACC:MAILACC" modelName="model:T_MAILMAINTAIN_INFO" tableAlias="T_MAILMAINTAIN_INFO">
+      <item name="USERID" originName="USERID"/>
+      <item name="USERNAME" originName="USERNAME">
+        <attribute name="defaultValueUseInModify" value="false"/>
+        <attribute name="web.required" value="true"/>
+        <attribute name="web.url" value="/sys/xxhjcssgl/modules/xxhbshsq/xxhbbjrycx.do"/>
+        <attribute name="web.xtype" value="selecttable"/>
+      </item>
+      <item name="MAILACC" originName="MAILACC"/>
+    </dataModelRef>
+    <dataModelRef include="DWJC:DWJC" modelName="model:T_XG_DW" tableAlias="T_XG_DW">
+      <item name="DWJC" originName="DWJC"/>
+    </dataModelRef>
+    <dataModelRef include="BGDH:BGDH,SJ:SJ" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item groupName="" name="BGDH" originName="BGDH"/>
+      <item groupName="" name="SJ" originName="SJ"/>
+    </dataModelRef>
+    <item colName="T_MAILMAINTAIN_INFO.USERNAME" custom="true" length="20" name="queryopt" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item colName="T_MAILMAINTAIN_INFO.USERNAME" custom="true" name="id" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

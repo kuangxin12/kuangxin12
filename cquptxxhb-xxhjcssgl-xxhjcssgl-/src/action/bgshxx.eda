@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更审核信息" displayRef="biz:bgssjbxx" name="bgshxx" paramRef="biz:bgssjbxx" paramRefInclude="WID,CK_SFYSQCK,WID_1,PWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+left join T_XXB_XXHJCSS_ZRRBGJL&#xD;
+ON T_XXB_XXHJCSS_JBXX.PWID = T_XXB_XXHJCSS_ZRRBGJL.JCSSID&#xD;
+where T_XXB_XXHJCSS_JBXX.PWID = T_XXB_XXHJCSS_ZRRBGJL.JCSSID&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

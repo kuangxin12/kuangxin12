@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="判断IP重复" displayRef="biz:pdipcf" name="pdipzf" paramRef="biz:pdipcf" paramRefInclude="WID,PWID,XNJ_IP,TGFWQ_IP" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+where ZT >= 6&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

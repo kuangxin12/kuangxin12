@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="查询已有设施" displayRef="model:T_XXB_XXHJCSS_JBXX" name="cxyyss" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="WID,MC" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX  &#xD;
+where (ZT=1 OR ZT>5 OR ZT=4 OR ZT=3 OR ZT IS NULL)&#xD;
+ #sub[and $]&#xD;
+&#xD;
+</sql>
+    <rowFactors>
+      <rowFactor id="335db898-0ef9-4a2f-ac33-7c89696e5b5f" name="all">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </actionModel>
+</model:Model>

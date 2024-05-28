@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="申请人申请列表" displayRef="biz:sqrsqlb" name="sqrsqlb" paramRef="biz:sqrsqlb" paramRefInclude="WID,PWID,MC,LX,SBFL,SQLX,XNJ_IP,TGFWQ_IP,TJSJ" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select WID,MC,SQDW,YT,LX,QTSM,YXQ,ZT,SFRZH,GLYXM,BGDH,&#xD;
+SJ,EMAIL,TGFWQ_PPXH,TGFWQ_CZXT,TGFWQ_XH,TGFWQ_CPU,TGFWQ_NC,&#xD;
+TGFWQ_SFYZ,TGFWQ_SFYCC,TGFWQ_IP,TGFWQ_YM,TGFWQ_JJH,TGFWQ_WZ,&#xD;
+XNJ_CZXT,XNJ_IP,CK_SFYSQCK,CK_IP,CK_DKH,CZR,PWID,SQLX,SBFL,XNJ_CPU,&#xD;
+XNJ_NC,TJSJ,XNJ_SJYP,XNJ_SFPT,SBFLSM,TGFWQ_FWQLX,TGFWQ_WIDTH,TGFWQ_HEIGHT,&#xD;
+TGFWQ_DEPTH,TGFWQ_PHOTO,TGFWQ_CN,XNJ_CN,TGFWQ_MAC&#xD;
+,(TGFWQ_IP||XNJ_IP) AS IP &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

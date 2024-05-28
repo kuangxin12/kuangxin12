@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="bmshrywh" desc="部门审核人员维护" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_BMSHRY_QUERY" ref="model:T_XXB_XXHJCSS_BMSHRY.QUERY" url="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BMSHRY_SAVE" ref="model:T_XXB_XXHJCSS_BMSHRY.SAVE" url="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmrycx" ref="action:bmrycx" url="src/action/bmrycx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmshrycx" ref="action:bmshrycx" url="src/action/bmshrycx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmshryxz" ref="action:bmshryxz" url="src/action/bmshry/bmshryxz.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="jzgmdcx" ref="action:jzgmdcx" url="src/action/bmshry/jzgmdcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BMSHRY_DELETE" ref="model:T_XXB_XXHJCSS_BMSHRY.DELETE" url="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_BMSHRY_ADD" ref="model:T_XXB_XXHJCSS_BMSHRY.ADD" url="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="cxyhzzylb" ref="action:cxyhzzylb" url="src/action/bmshry/cxyhzzylb.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

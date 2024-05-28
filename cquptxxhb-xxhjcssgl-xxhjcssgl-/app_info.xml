@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package_info> 
+  <!-- 依赖EMAP底座版本 -->  
+  <emap_version>1.8.83.B159</emap_version>  
+  <!-- 依赖信息 -->  
+  <dependences> 
+    <dependence name="" identity="" version=""></dependence> 
+  </dependences>  
+  <!-- 应用信息 -->  
+  <application> 
+    <!-- 应用类型: web、mobile、web/mobile -->  
+    <type>web</type>  
+    <!-- 应用缩写，由字母数字下划线组成，不超过40字节 -->  
+    <name>xxhjcssgl</name>  
+    <!-- 应用中文名称，不超过20汉字 -->  
+    <cname>信息化基础设施管理</cname>  
+    <!-- 应用制造商,不超过20汉字 -->  
+    <vendor>金智教育</vendor>  
+    <!-- 应用的分类标签，用于定义云端应用的作用域。 -->  
+    <category>02</category>  
+    <!-- 应用描述，不超过300汉字 -->  
+    <description>desc</description>  
+    <!-- 应用版本号: X.XX.XXX -->  
+    <version>1.0.0</version> 
+  </application> 
+</package_info>

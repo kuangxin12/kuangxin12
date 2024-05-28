@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="查询用户组组员列表" name="cxyhzzylb" type="WS">
+    <wservice targetNamespace="http://group.impl.api.web.mdbservice.wisedu.com/" url="http://172.16.1.104:8081/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService?wsdl">
+      <method name="searchAllUsers" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="searchRequest" primitive="false" type="searchRequest"/>
+        <result name="searchAllUsersResponse>UserInfoResponse" primitive="false" type="userInfoNewResponse"/>
+      </method>
+      <method name="getGroupsByDomainId" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="domainGroupRequest" primitive="false" type="domainGroupRequest"/>
+        <result name="getGroupsByDomainIdResponse>GroupsResponse" primitive="false" type="groupsResponse"/>
+      </method>
+      <method name="addAppGroup" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupManiRequest" primitive="false" type="groupManiRequest"/>
+        <result name="addAppGroupResponse>GroupIdResponse" primitive="false" type="groupIdResponse"/>
+      </method>
+      <method name="AddAppGroupUser" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupUserRequest" primitive="false" type="groupUserRequest"/>
+        <result name="AddAppGroupUserResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <method name="updateAppGroup" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupManiRequest" primitive="false" type="groupManiRequest"/>
+        <result name="updateAppGroupResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <method name="addDomainGroup" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupManiRequest" primitive="false" type="groupManiRequest"/>
+        <result name="addDomainGroupResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <method name="getUsersByAppGroup" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupRequest" primitive="false" type="groupRequest"/>
+        <result name="getUsersByAppGroupResponse>UserInfoNewResponse" primitive="false" type="userInfoNewResponse"/>
+      </method>
+      <method name="getGroupInfoByGroupIds" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="idsRequest" primitive="false" type="idsRequest"/>
+        <result name="getGroupInfoByGroupIdsResponse>GroupsResponse" primitive="false" type="groupsResponse"/>
+      </method>
+      <method name="getGroupsByDomainIds" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="domainsRequest" primitive="false" type="domainsRequest"/>
+        <result name="getGroupsByDomainIdsResponse>GroupsResponse" primitive="false" type="groupsResponse"/>
+      </method>
+      <method name="updateUserGroupRel2Cache" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupId" primitive="true" type="string"/>
+        <result name="updateUserGroupRel2CacheResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <method name="delAppGroup" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="arg0" primitive="false" type="groupManiRequest"/>
+        <result name="delAppGroupResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <method name="searchGroupUser" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="true">
+        <param name="searchGroupUserRequest" primitive="false" type="searchGroupUserRequest"/>
+        <result name="searchGroupUserResponse>UserInfoNewResponse" primitive="false" type="userInfoNewResponse"/>
+      </method>
+      <method name="getAppGroups" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="appId" primitive="true" type="string"/>
+        <result name="getAppGroupsResponse>GroupsResponse" primitive="false" type="groupsResponse"/>
+      </method>
+      <method name="deleteAppGroupUser" namespace="http://group.ws.api.mdbservice.wisedu.com/" serviceName="AppGroupAPIImplService" soapAction="" urlEnd="/mdm_AppGroupAPIImplService/ProxyService/AppGroupAPIImplServiceProxyService" urlStart="http://172.16.1.104:8081" used="false">
+        <param name="groupUserRequest" primitive="false" type="groupUserRequest"/>
+        <result name="deleteAppGroupUserResponse>BaseResponse" primitive="false" type="baseResponse"/>
+      </method>
+      <type name="searchRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="searchRequest>condition" primitive="true" type="string"/>
+      </type>
+      <type name="page">
+        <param name="page>order" primitive="true" type="string"/>
+        <param name="page>orderBy" primitive="true" type="string"/>
+        <param name="page>pageNum" primitive="true" type="int"/>
+        <param name="page>pageSize" primitive="true" type="int"/>
+      </type>
+      <type name="userInfoNewResponse">
+        <param name="baseResponse>msg" primitive="true" type="string"/>
+        <param name="baseResponse>page" primitive="false" type="page"/>
+        <param name="baseResponse>status" primitive="true" type="int"/>
+        <param name="baseResponse>total" primitive="true" type="int"/>
+        <param name="userInfoNewResponse>redisInfo" primitive="false" type="redisInfoNew[0,unbounded] wrapped"/>
+      </type>
+      <type name="redisInfoNew[0,unbounded] wrapped">
+        <param dimensions="[]" primitive="false" type="redisInfoNew"/>
+      </type>
+      <type name="redisInfoNew">
+        <param name="redisInfoNew>className" primitive="true" type="string"/>
+        <param name="redisInfoNew>id" primitive="true" type="string"/>
+        <param name="redisInfoNew>name" primitive="true" type="string"/>
+        <param name="redisInfoNew>school" primitive="true" type="string"/>
+        <param name="redisInfoNew>sexCode" primitive="true" type="string"/>
+        <param name="redisInfoNew>sexName" primitive="true" type="string"/>
+        <param name="redisInfoNew>type" primitive="true" type="string"/>
+      </type>
+      <type name="domainGroupRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="domainGroupRequest>domain" primitive="true" type="string"/>
+      </type>
+      <type name="groupsResponse">
+        <param name="baseResponse>msg" primitive="true" type="string"/>
+        <param name="baseResponse>page" primitive="false" type="page"/>
+        <param name="baseResponse>status" primitive="true" type="int"/>
+        <param name="baseResponse>total" primitive="true" type="int"/>
+        <param name="groupsResponse>groups" primitive="false" type="group[0,unbounded] wrapped"/>
+      </type>
+      <type name="group[0,unbounded] wrapped">
+        <param dimensions="[]" primitive="false" type="group"/>
+      </type>
+      <type name="group">
+        <param name="group>creator" primitive="true" type="string"/>
+        <param name="group>description" primitive="true" type="string"/>
+        <param name="group>domainCode" primitive="true" type="string"/>
+        <param name="group>domainName" primitive="true" type="string"/>
+        <param name="group>groupId" primitive="true" type="string"/>
+        <param name="group>inType" primitive="true" type="short"/>
+        <param name="group>isDyna" primitive="true" type="short"/>
+        <param name="group>lastModifier" primitive="true" type="string"/>
+        <param name="group>name" primitive="true" type="string"/>
+        <param name="group>num" primitive="true" type="string"/>
+        <param name="group>userCheckSql" primitive="true" type="string"/>
+        <param name="group>usersContainsSql" primitive="true" type="string"/>
+      </type>
+      <type name="groupManiRequest">
+        <param name="groupManiRequest>group" primitive="false" type="group"/>
+        <param name="groupManiRequest>operator" primitive="true" type="string"/>
+      </type>
+      <type name="groupIdResponse">
+        <param name="baseResponse>msg" primitive="true" type="string"/>
+        <param name="baseResponse>page" primitive="false" type="page"/>
+        <param name="baseResponse>status" primitive="true" type="int"/>
+        <param name="baseResponse>total" primitive="true" type="int"/>
+        <param name="groupIdResponse>groupId" primitive="true" type="string"/>
+      </type>
+      <type name="groupUserRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="groupUserRequest>groupUsers" primitive="false" type="groupUser[0,unbounded] wrapped"/>
+        <param name="groupUserRequest>operator" primitive="true" type="string"/>
+      </type>
+      <type name="groupUser[0,unbounded] wrapped">
+        <param dimensions="[]" primitive="false" type="groupUser"/>
+      </type>
+      <type name="groupUser">
+        <param name="groupUser>groupId" primitive="true" type="string"/>
+        <param name="groupUser>userId" primitive="true" type="string"/>
+      </type>
+      <type name="baseResponse">
+        <param name="baseResponse>msg" primitive="true" type="string"/>
+        <param name="baseResponse>page" primitive="false" type="page"/>
+        <param name="baseResponse>status" primitive="true" type="int"/>
+        <param name="baseResponse>total" primitive="true" type="int"/>
+      </type>
+      <type name="groupRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="groupRequest>groupId" primitive="true" type="string"/>
+        <param name="groupRequest>uid" primitive="true" type="string"/>
+      </type>
+      <type name="idsRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="idsRequest>ids" primitive="true" type="string[0,unbounded] wrapped"/>
+      </type>
+      <type name="string[0,unbounded] wrapped">
+        <param dimensions="[]" primitive="true" type="string"/>
+      </type>
+      <type name="domainsRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="domainsRequest>domainIds" primitive="true" type="string[0,unbounded] wrapped"/>
+      </type>
+      <type name="searchGroupUserRequest">
+        <param name="baseRequest>page" primitive="false" type="page"/>
+        <param name="searchGroupUserRequest>condition" primitive="true" type="string"/>
+        <param name="searchGroupUserRequest>groupId" primitive="true" type="string"/>
+      </type>
+      <header name="serviceId" value="8a777e8d48de"/>
+      <header name="appId" value="commonApp"/>
+      <header name="accessToken" value="6D57105AEB405596A6671723FFD911EF"/>
+    </wservice>
+  </actionModel>
+</model:Model>

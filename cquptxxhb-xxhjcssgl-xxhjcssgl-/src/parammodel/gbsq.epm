@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="gbsq" order="WID,SQR,SQRY,JCSSID,LY,GBJCSS,JHGBSJ,GBSJ,TXQR">
+    <dataModelRef include="WID:WID,SQR:SQR,JCSSID:JCSSID,JHGBSJ:JHGBSJ,LY:LY,TXQR:TXQR" modelName="model:T_XXB_XXHJCSS_GB" tableAlias="T_XXB_XXHJCSS_GB">
+      <item name="WID" originName="WID"/>
+      <item name="SQR" originName="SQR">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="JCSSID" originName="JCSSID">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="JHGBSJ" originName="JHGBSJ">
+        <attribute name="web.form.required" value="false"/>
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="LY" originName="LY"/>
+      <item name="TXQR" originName="TXQR"/>
+    </dataModelRef>
+    <item caption="所要关闭的基础设施" colName="GBJCSS" custom="true" name="GBJCSS" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.form.xtype" value="select"/>
+    </item>
+    <item caption="计划关闭时间" colName="GBSJ" custom="true" name="GBSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+    </item>
+    <item caption="申请人" colName="SQRY" custom="true" name="SQRY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

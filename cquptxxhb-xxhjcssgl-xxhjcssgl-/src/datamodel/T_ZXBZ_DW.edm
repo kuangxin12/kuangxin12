@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_ZXBZ_DW" queryOrder="" type="table">
+    <item caption="" colName="JGFLDM" length="10" name="JGFLDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="YWY" length="100" name="YWY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="SFWLZZ" length="2" name="SFWLZZ" type="int">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="CJSJ" length="40" name="CJSJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="ZHXGSJ" length="40" name="ZHXGSJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY3" length="4000" name="BY3" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY4" length="4000" name="BY4" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY5" length="4000" name="BY5" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY6" length="4000" name="BY6" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY7" length="4000" name="BY7" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY8" length="4000" name="BY8" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY9" length="4000" name="BY9" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY10" length="4000" name="BY10" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="ISDEL" length="2" name="ISDEL" type="int">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="WID" length="40" name="WID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="" colName="DM" length="20" name="DM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="MC" length="180" name="MC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="JC" length="180" name="JC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="CC" length="10" name="CC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="LS" length="20" name="LS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="PX" length="10" name="PX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="SFSY" length="1" name="SFSY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="FBQK" length="10" name="FBQK" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="YBZDM" length="10" name="YBZDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="QSSYRQ" length="7" name="QSSYRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="ZZSYRQ" length="7" name="ZZSYRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BZLY" length="10" name="BZLY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY2" length="90" name="BY2" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="CZLX" length="10" name="CZLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="BY1" length="90" name="BY1" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="SJLY" length="20" name="SJLY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="CLRQ" length="7" name="CLRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="LBDM" length="10" name="LBDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="YWMC" length="180" name="YWMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="JM" length="40" name="JM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="XQ" length="1" name="XQ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="DWTP" length="300" name="DWTP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="LXFS" length="300" name="LXFS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="TJBM" length="10" name="TJBM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="DWJSMX1" length="4000" name="DWJSMX1" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="DWJSMX" length="4000" name="DWJSMX" type="BigString">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="XH" length="22" name="XH" type="double">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="PYSX" length="6" name="PYSX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="LX" length="10" name="LX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="bmldns" desc="部门领导年审" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmcx" ref="action:bmcx" url="src/action/bmcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="jcsszxnscx" ref="action:jcsszxnscx" url="src/action/jcsszxnscx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_NS_QUERY" ref="model:T_XXB_XXHJCSS_NS.QUERY" url="src/datamodel/T_XXB_XXHJCSS_NS.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="nsjcsscx" ref="action:nsjcsscx" url="src/action/nsjcsscx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xgzt" ref="action:xgzt" url="src/action/xgzt.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="nsshjcssxx" ref="action:nsshjcssxx" url="src/action/nsshjcssxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_NS_MODIFY" ref="model:T_XXB_XXHJCSS_NS.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_NS.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="nssqbd" order="WID,WLJCSSWID,SQR,SQRY,NSND,NSJZRQ,TJSJ">
+    <dataModelRef include="WID:WID,WLJCSSWID:WLJCSSWID,SQR:SQR,NSND:NSND,NSJZRQ:NSJZRQ,TJSJ:TJSJ" modelName="model:T_XXB_XXHJCSS_NS" tableAlias="T_XXB_XXHJCSS_NS">
+      <item name="WID" originName="WID"/>
+      <item name="WLJCSSWID" originName="WLJCSSWID"/>
+      <item name="SQR" originName="SQR">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="NSND" originName="NSND"/>
+      <item name="NSJZRQ" originName="NSJZRQ"/>
+      <item name="TJSJ" originName="TJSJ"/>
+    </dataModelRef>
+    <item caption="申请人" colName="SQRY" custom="true" length="50" name="SQRY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

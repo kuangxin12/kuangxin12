@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_CKQX" queryOrder="" type="table">
+    <item caption="WID" colName="WID" groupName="" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="姓名" colName="XM" foreignName="" groupName="" length="50" name="XM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="统一身份认证码" colName="ZGH" groupName="" length="50" name="ZGH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="所在单位" colName="SZDW" foreignName="" groupName="" length="255" name="SZDW" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="builder" value=""/>
+      <attribute name="dic" value=""/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

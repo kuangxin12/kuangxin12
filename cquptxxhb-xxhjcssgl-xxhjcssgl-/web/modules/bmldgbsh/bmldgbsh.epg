@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="bmldgbsh" desc="部门领导关闭审核" permissionLevel="">
+    <actions>
+      <action name="gbssjbxx" ref="action:gbssjbxx" url="src/action/gbssjbxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_GB_QUERY" ref="model:T_XXB_XXHJCSS_GB.QUERY" url="src/datamodel/T_XXB_XXHJCSS_GB.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

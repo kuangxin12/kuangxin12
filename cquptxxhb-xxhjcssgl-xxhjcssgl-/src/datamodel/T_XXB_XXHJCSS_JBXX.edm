@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_JBXX" queryOrder="" saveLog="true" type="table">
+    <item caption="WID" colName="WID" foreignName="" groupName="基本信息" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="PWID" colName="PWID" foreignName="" groupName="基本信息" length="50" name="PWID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="名称" colName="MC" foreignName="" groupName="基本信息" length="500" name="MC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="builder" value="m_value_include"/>
+      <attribute name="web.grid.width" value="230px"/>
+      <attribute name="web.checkSize" value="30"/>
+      <attribute name="web.form.placeholder" value="名称请概括虚拟机主要用途以示区别，如有多台请编号。"/>
+    </item>
+    <item caption="申请单位" colName="SQDW" foreignName="" groupName="基本信息" length="50" name="SQDW" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="44e06060-8e70-40e7-b519-3c36ad92c9c2"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.grid.width" value="250px"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.readonly" value="true"/>
+      <attribute name="web.hidden" value="false"/>
+    </item>
+    <item caption="类型" colName="LX" foreignName="" groupName="基本信息" length="50" name="LX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.grid.width" value="120px"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.xtype" value="text"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+      <attribute name="web.form.hidden" value="true"/>
+    </item>
+    <item caption="状态" colName="ZT" groupName="基本信息" length="22" name="ZT" type="double">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="web.grid.width" value=""/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="a6c4f109-b115-4aa0-afcf-6b0efaf18df1"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+    </item>
+    <item caption="用途" colName="YT" groupName="基本信息" length="500" name="YT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.grid.width" value="150px"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.checkSize" value="160"/>
+    </item>
+    <item caption="设备分类" colName="SBFL" foreignName="" groupName="基本信息" length="50" name="SBFL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="radiolist"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="063fd86b-74e1-4f14-a764-c620c44c312d"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.form.xtype" value="radiolist"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.col" value=""/>
+      <attribute name="web.grid.width" value="120px"/>
+    </item>
+    <item caption="申请类型" colName="SQLX" foreignName="" groupName="基本信息" length="50" name="SQLX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="web.grid.width" value="100px"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="是否申请出口" colName="CK_SFYSQCK" foreignName="" groupName="基本信息" length="10" name="CK_SFYSQCK" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="format" value=""/>
+      <attribute name="web.form.xtype" value="switcher"/>
+      <attribute name="web.grid.width" value="100px"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="builder" value="equal"/>
+      <attribute name="builderList" value="cbl_List"/>
+      <attribute name="web.search.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="select"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="dic" value="e09e470c-545e-4997-8ab7-7abfa280ef88"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="其他说明" colName="QTSM" groupName="基本信息" length="500" name="QTSM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="text"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.checkSize" value="160"/>
+    </item>
+    <item caption="信息化办操作人" colName="CZR" groupName="基本信息" length="50" name="CZR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="CPU" colName="XNJ_CPU" foreignName="" groupName="虚拟机需求信息" length="50" name="XNJ_CPU" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="4597f46f-2656-4c26-a572-a366c513da5b"/>
+    </item>
+    <item caption="内存" colName="XNJ_NC" groupName="虚拟机需求信息" length="50" name="XNJ_NC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="65b0efaf-ae7a-4472-9474-69119c04c1ab"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="操作系统" colName="XNJ_CZXT" foreignName="" groupName="虚拟机需求信息" length="50" name="XNJ_CZXT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.placeholder" value=""/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="abf2d05e-022c-46dd-99c8-08f5d0ff4c53"/>
+    </item>
+    <item caption="数据硬盘" colName="XNJ_SJYP" groupName="虚拟机需求信息" length="50" name="XNJ_SJYP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="bff954b4-b36b-4e13-af4e-093e8a403c20"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="内存" colName="TGFWQ_NC" groupName="托管服务器需求信息" length="50" name="TGFWQ_NC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="65b0efaf-ae7a-4472-9474-69119c04c1ab"/>
+    </item>
+    <item caption="CPU" colName="TGFWQ_CPU" foreignName="" groupName="托管服务器需求信息" length="50" name="TGFWQ_CPU" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="4e96943a-a036-4c29-ad54-50e80302bda0"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="品牌" colName="TGFWQ_PPXH" foreignName="" groupName="托管服务器需求信息" length="50" name="TGFWQ_PPXH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="2dd83d71-1836-4387-b1eb-1cfc0d35ed1b"/>
+    </item>
+    <item caption="操作系统" colName="TGFWQ_CZXT" groupName="托管服务器需求信息" length="50" name="TGFWQ_CZXT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="91767a27-94c0-4d51-bc72-f1ed075b1557"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="型号" colName="TGFWQ_XH" groupName="托管服务器需求信息" length="500" name="TGFWQ_XH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.checkSize" value="160"/>
+    </item>
+    <item caption="MAC地址" colName="TGFWQ_MAC" foreignName="" groupName="托管服务器需求信息" length="255" name="TGFWQ_MAC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.checkSize" value="120"/>
+    </item>
+    <item caption="服务器类型" colName="TGFWQ_FWQLX" groupName="托管服务器需求信息" length="100" name="TGFWQ_FWQLX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="6b6a9d60-9620-4154-9506-fe34801c7dab"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.xtype" value="radiolist"/>
+    </item>
+    <item caption="宽度" colName="TGFWQ_WIDTH" groupName="托管服务器需求信息" length="100" name="TGFWQ_WIDTH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.placeholder" value="填写服务器的具体宽度，如2000mm"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.checkSize" value="33"/>
+    </item>
+    <item caption="高度" colName="TGFWQ_HEIGHT" foreignName="" groupName="托管服务器需求信息" length="100" name="TGFWQ_HEIGHT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.placeholder" value="填写服务器的具体高度，如10U"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.checkSize" value="33"/>
+    </item>
+    <item caption="深度" colName="TGFWQ_DEPTH" foreignName="" groupName="托管服务器需求信息" length="100" name="TGFWQ_DEPTH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.form.placeholder" value="填写服务器的具体深度，如2000mm"/>
+      <attribute name="web.checkSize" value="33"/>
+    </item>
+    <item caption="服务器拆箱照片" colName="TGFWQ_PHOTO" groupName="托管服务器需求信息" length="100" name="TGFWQ_PHOTO" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.col" value="2"/>
+      <attribute name="web.form.xtype" value="uploadsingleimage"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+    </item>
+    <item caption="申请人统一识别码" colName="SFRZH" groupName="申请人信息" length="7" name="SFRZH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="申请人" colName="GLYXM" foreignName="" groupName="申请人信息" length="100" name="GLYXM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.xtype" value="text"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+      <attribute name="web.grid.width" value="100px"/>
+    </item>
+    <item caption="有效期" colName="YXQ" foreignName="" groupName="基本信息" length="7" name="YXQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="web.format" value="yyyy-MM-dd HH:mm:ss"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-full"/>
+      <attribute name="web.grid.width" value=""/>
+      <attribute name="prepare" value="long2TimePre"/>
+      <attribute name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+    </item>
+    <item caption="电子邮箱" colName="EMAIL" groupName="申请人信息" length="100" name="EMAIL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="办公电话" colName="BGDH" groupName="申请人信息" length="20" name="BGDH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.checkType" value="custom[tel]"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="手机" colName="SJ" foreignName="" groupName="申请人信息" length="11" name="SJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.checkType" value="custom[phone]"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="分配IP地址" colName="XNJ_IP" foreignName="" groupName="信息中心操作记录" length="50" name="XNJ_IP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="builder" value="m_value_include"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.form.hidden" value="false"/>
+    </item>
+    <item caption="房间号" colName="TGFWQ_YM" foreignName="" groupName="信息中心操作记录" length="50" name="TGFWQ_YM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="26bbca71-5dc9-4f9e-9a33-fb00e0805e2a"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.form.hidden" value="false"/>
+    </item>
+    <item caption="掩码" colName="TGFWQ_SFYZ" foreignName="" groupName="信息中心操作记录" length="50" name="TGFWQ_SFYZ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+    </item>
+    <item caption="网关" colName="TGFWQ_SFYCC" groupName="信息中心操作记录" length="50" name="TGFWQ_SFYCC" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+    </item>
+    <item caption="主机IP" colName="TGFWQ_IP" foreignName="" groupName="信息中心操作记录" length="50" name="TGFWQ_IP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="builder" value="m_value_include"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.form.hidden" value="false"/>
+    </item>
+    <item caption="放置机架号" colName="TGFWQ_JJH" foreignName="" groupName="信息中心操作记录" length="50" name="TGFWQ_JJH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.form.hidden" value="false"/>
+    </item>
+    <item caption="DNS" colName="TGFWQ_WZ" foreignName="" groupName="信息中心操作记录" length="50" name="TGFWQ_WZ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+    </item>
+    <item caption="托管服务器安全承诺" colName="TGFWQ_CN" foreignName="" groupName="安全承诺" length="1000" name="TGFWQ_CN" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="checkboxlist"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="76921eb8-1266-4387-8573-8feb6a89a343"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.form.xtype" value="checkboxlist"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.col" value="2"/>
+    </item>
+    <item caption="虚拟机使用安全承诺" colName="XNJ_CN" groupName="安全承诺" length="1000" name="XNJ_CN" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="checkboxlist"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="29ce2de5-8ff4-438a-831f-0815fd298081"/>
+      <attribute name="web.form.xtype" value="checkboxlist"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.col" value="2"/>
+    </item>
+    <item caption="主机申请开放端口号" colName="CK_DKH" groupName="出口详细信息" length="50" name="CK_DKH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="主机IP" colName="CK_IP" foreignName="" groupName="出口详细信息" length="50" name="CK_IP" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+      <attribute name="web.grid.fixed" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="提交时间" colName="TJSJ" foreignName="" groupName="基本信息" length="7" name="TJSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="defaultValue" value="env:custom.currentDatetime"/>
+      <attribute name="forceDefault" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.xtype" value="date-range"/>
+      <attribute name="web.form.xtype" value="date-range"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.format" value="yyyy-MM-dd HH:mm:ss"/>
+      <attribute name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+      <attribute name="web.form.hidden" value="true"/>
+    </item>
+    <item caption="所属平台" colName="XNJ_SFPT" groupName="信息中心操作记录" length="50" name="XNJ_SFPT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="3e6a716c-663a-4dad-85ff-75f45c7e8c14"/>
+      <attribute name="web.form.xtype" value="select"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="设备分类说明" colName="SBFLSM" groupName="基本信息" length="50" name="SBFLSM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <rowFactors>
+      <rowFactor id="a427a4cb-c79f-429b-b722-0409acbbbd5f" name="xtgly">
+        <sql>T_XXB_XXHJCSS_JBXX.SFRZH=${custom.currentUserId}</sql>
+      </rowFactor>
+      <rowFactor id="ded9c4d1-6a86-4f6e-946e-6941892adf0c" name="xxhlly">
+        <sql>T_XXB_XXHJCSS_JBXX.SQDW IN &#xD;
+ (select DWDM from T_YXFZR&#xD;
+ where T_YXFZR.ZGH=${custom.currentUserId}&#xD;
+    and T_YXFZR.JS='信息化联络员')</sql>
+      </rowFactor>
+      <rowFactor id="3aa21953-f189-4208-964b-7a841274091c" name="bmxxhfgld">
+        <sql>T_XXB_XXHJCSS_JBXX.SQDW IN &#xD;
+ (select DWDM from T_YXFZR&#xD;
+ where T_YXFZR.ZGH=${custom.currentUserId}&#xD;
+  and T_YXFZR.JS='部门信息化分管领导')</sql>
+      </rowFactor>
+      <rowFactor id="9661ecc4-5153-4567-af7d-57bb601e00d2" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="4696525c-153d-439a-a876-ead3e71fb276" name="jwc">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="a322c2d2-78af-4b14-bf95-3e977380ceff" name="kjc">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="fa5a6aed-18ec-4041-a8e5-96694c5e828f" name="xxhbld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </dataModel>
+</model:Model>

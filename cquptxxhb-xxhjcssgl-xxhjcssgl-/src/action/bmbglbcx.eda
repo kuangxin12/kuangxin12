@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="部门变更列表查询" displayRef="biz:bmbglb" displayRefInclude="WID,BGQGLY,BGHGLY,BGTJSJ,JCSSID,XEMAIL,XSJ,XBGDH,YEMAIL,YSJ,YBGDH,ZGH,XM" name="bmbglbcx" paramRef="biz:bmbglb" paramRefInclude="BGQGLY,BGHGLY,XM" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+(select * from T_XXB_XXHJCSS_ZRRBGJL &#xD;
+left join T_JZG &#xD;
+on T_XXB_XXHJCSS_ZRRBGJL.BGQGLY=T_JZG.ZGH) T_XXB_XXHJCSS_ZRRBGJL&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

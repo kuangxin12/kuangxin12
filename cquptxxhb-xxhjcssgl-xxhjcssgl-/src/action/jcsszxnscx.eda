@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="基础设施最新年审查询" displayRef="biz:ns" displayRefInclude="WID,WLJCSSWID,NSND,NSJZRQ,MC,SQDW,LX,ZT,YT,YXQ,CK_SFYSQCK,XNJ_CZXT,SBFL,XNJ_CPU,TGFWQ_NC,QTSM,SFRZH,GLYXM,EMAIL,BGDH,SJ,TGFWQ_PPXH,TGFWQ_CZXT,TGFWQ_SFYZ,TGFWQ_SFYCC,TGFWQ_IP,TGFWQ_YM,TGFWQ_JJH,TGFWQ_WZ,XNJ_IP,CK_DKH,CK_IP,CZR,PWID,SQLX,XNJ_NC,XNJ_SJYP,TGFWQ_CPU,TGFWQ_XH" name="jcsszxnscx" paramRef="biz:ns" paramRefInclude="WLJCSSWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] from&#xD;
+T_XXB_XXHJCSS_JBXX , &#xD;
+(SELECT a.* FROM T_XXB_XXHJCSS_NS  a WHERE  NOT EXISTS (SELECT * FROM T_XXB_XXHJCSS_NS  WHERE a.WLJCSSWID=WLJCSSWID and NSJZRQ>a.NSJZRQ)) T_XXB_XXHJCSS_NS&#xD;
+WHERE T_XXB_XXHJCSS_JBXX.PWID=T_XXB_XXHJCSS_NS.WLJCSSWID&#xD;
+#sub[AND $]</sql>
+  </actionModel>
+</model:Model>

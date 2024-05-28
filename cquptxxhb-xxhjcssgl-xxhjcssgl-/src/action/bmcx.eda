@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="部门查询" displayRef="model:T_XG_DW" displayRefInclude="DWDM,DWJC,PX,SFSY" name="bmcx" paramRef="model:T_XG_DW" paramRefInclude="DWDM" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select]&#xD;
+from T_XG_DW &#xD;
+where SFSY=1 and CZZ=2&#xD;
+and dwjm in('10000','30000','40000')&#xD;
+and DWDM not in ('10100')&#xD;
+#sub[and $]&#xD;
+ORDER BY DWDM asc </sql>
+  </actionModel>
+</model:Model>

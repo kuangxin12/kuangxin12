@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="EMAP_SAPP_ROLE_RELATION" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="40" name="WID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="角色编号" colName="ROLEID" length="40" name="ROLEID" pK="false" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="角色名称" colName="ROLENAME" length="100" name="ROLENAME" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否可授予用户" colName="CANGRANTUSER" length="2" name="CANGRANTUSER" type="int">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="包含的其它角色编号列表, 用逗号分隔" colName="CONTAINSROLES" length="2000" name="CONTAINSROLES" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="最后修改时间" colName="LASTMODIFIED" length="7" name="LASTMODIFIED" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作的用户" colName="OPTUSER" length="100" name="OPTUSER" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作时的角色" colName="OPTROLE" length="80" name="OPTROLE" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="动态SQL" colName="DYNAMICSQL" length="600" name="DYNAMICSQL" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="状态" colName="STATUS" length="2" name="STATUS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

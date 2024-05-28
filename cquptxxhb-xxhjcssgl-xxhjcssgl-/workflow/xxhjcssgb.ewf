@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:emap="http://emap.wisedu.com/flow" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://emap.wisedu.com/flow">
+  <process id="xxhjcssgl.xxhjcssgb" name="信息化基础设施关闭" isExecutable="true">
+    <extensionElements>
+      <emap:operations>
+        <emap:taskcenter state="true"></emap:taskcenter>
+        <emap:messagecenter state="true"></emap:messagecenter>
+        <emap:important state="false"></emap:important>
+        <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+        <emap:needSelectNode state="false"></emap:needSelectNode>
+        <emap:disableFlowComment state="false"></emap:disableFlowComment>
+        <emap:elecseal state="false"></emap:elecseal>
+      </emap:operations>
+    </extensionElements>
+    <startEvent id="startevent1" name="开始" activiti:initiator="submitUser"></startEvent>
+    <userTask id="gbsq" name="关闭申请" activiti:assignee="${submitUser}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="start" name="提交" action="model:T_XXB_XXHJCSS_GB.SAVE" sendMessage="true" commandType="start" execute="do_start" url="/sys/emapflow/tasks/startFlow.do"></emap:command>
+            <emap:command id="submit" name="提交" action="model:T_XXB_XXHJCSS_GB.SAVE" sendMessage="true" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="draft" name="暂存" action="model:T_XXB_XXHJCSS_GB.SAVE" sendMessage="true" commandType="draft" execute="do_start" url="/sys/emapflow/tasks/startFlow.do"></emap:command>
+            <emap:command id="callback" name="撤回" sendMessage="true" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="/sys/xxhjcssgl/*default/index.do" modelUrl="/sys/xxhjcssgl/modules/xxhjcssgbsq.do" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_GB_QUERY"></emap:action>
+            <emap:action name="gbjcsssq"></emap:action>
+            <emap:action name="whsscx"></emap:action>
+            <emap:action name="T_JZG_QUERY"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false"></emap:taskcenter>
+          <emap:messagecenter state="false"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="gbsq"></sequenceFlow>
+    <userTask id="xxhllyshgb" name="信息化联络员审核关闭" activiti:candidateUsers="${formData.xxhlly}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" sendMessage="true" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回" backTo="gbsq" sendMessage="true" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" sendMessage="true" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+            <emap:command id="processStatus" name="流程状态" sendMessage="true" commandType="processStatus" execute="do_process_status" url="/sys/emapflow/tasks/queryFlowState.do"></emap:command>
+            <emap:command id="callback" name="撤回" sendMessage="true" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="/sys/xxhjcssgl/*default/index.do" modelUrl="/sys/xxhjcssgl/modules/xxhllygbsh.do" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_GB_QUERY"></emap:action>
+            <emap:action name="gbssjbxx"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false"></emap:taskcenter>
+          <emap:messagecenter state="false"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow2" sourceRef="gbsq" targetRef="xxhllyshgb"></sequenceFlow>
+    <userTask id="bmldshgb" name="部门领导审核关闭" activiti:candidateUsers="${formData.bmld}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" sendMessage="true" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回" backTo="gbsq" sendMessage="true" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" sendMessage="true" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+            <emap:command id="callback" name="撤回" sendMessage="true" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+            <emap:command id="processStatus" name="流程状态" sendMessage="true" commandType="processStatus" execute="do_process_status" url="/sys/emapflow/tasks/queryFlowState.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="/sys/xxhjcssgl/*default/index.do" modelUrl="/sys/xxhjcssgl/modules/bmldgbsh.do" readonly="false">
+            <emap:action name="gbssjbxx"></emap:action>
+            <emap:action name="T_XXB_XXHJCSS_GB_QUERY"></emap:action>
+          </emap:form>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow3" sourceRef="xxhllyshgb" targetRef="bmldshgb">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${formData.SH==1}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="xxhbshgb" name="信息化办审核关闭" activiti:candidateUsers="${formData.xxhb}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" sendMessage="true" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回" backTo="gbsq" sendMessage="true" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" sendMessage="true" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+            <emap:command id="callback" name="撤回" sendMessage="true" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+            <emap:command id="processStatus" name="流程状态" sendMessage="true" commandType="processStatus" execute="do_process_status" url="/sys/emapflow/tasks/queryFlowState.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="/sys/xxhjcssgl/*default/index.do" modelUrl="/sys/xxhjcssgl/modules/xxhbgbsh.do" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_GB_QUERY"></emap:action>
+            <emap:action name="gbssjbxx"></emap:action>
+          </emap:form>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow4" sourceRef="bmldshgb" targetRef="xxhbshgb">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${formData.SH==1}]]></conditionExpression>
+    </sequenceFlow>
+    <endEvent id="endevent1" name="结束"></endEvent>
+    <sequenceFlow id="flow5" sourceRef="xxhbshgb" targetRef="endevent1">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${formData.SH==1}]]></conditionExpression>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_xxhjcssgl.xxhjcssgb">
+    <bpmndi:BPMNPlane bpmnElement="xxhjcssgl.xxhjcssgb" id="BPMNPlane_xxhjcssgl.xxhjcssgb">
+      <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="100.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="gbsq" id="BPMNShape_gbsq">
+        <omgdc:Bounds height="55.0" width="105.0" x="180.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xxhllyshgb" id="BPMNShape_xxhllyshgb">
+        <omgdc:Bounds height="55.0" width="105.0" x="330.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="bmldshgb" id="BPMNShape_bmldshgb">
+        <omgdc:Bounds height="55.0" width="105.0" x="480.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xxhbshgb" id="BPMNShape_xxhbshgb">
+        <omgdc:Bounds height="55.0" width="105.0" x="630.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="780.0" y="100.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="135.0" y="117.0"></omgdi:waypoint>
+        <omgdi:waypoint x="180.0" y="127.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="285.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="330.0" y="127.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+        <omgdi:waypoint x="435.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="480.0" y="127.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow4" id="BPMNEdge_flow4">
+        <omgdi:waypoint x="585.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="606.0" y="126.0"></omgdi:waypoint>
+        <omgdi:waypoint x="619.0" y="126.0"></omgdi:waypoint>
+        <omgdi:waypoint x="619.0" y="126.0"></omgdi:waypoint>
+        <omgdi:waypoint x="628.0" y="126.0"></omgdi:waypoint>
+        <omgdi:waypoint x="630.0" y="127.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
+        <omgdi:waypoint x="735.0" y="127.0"></omgdi:waypoint>
+        <omgdi:waypoint x="780.0" y="117.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

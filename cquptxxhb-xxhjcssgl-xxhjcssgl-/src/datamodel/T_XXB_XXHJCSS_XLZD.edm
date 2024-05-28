@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_XLZD" queryOrder="PX Asc" type="table">
+    <item caption="WID" colName="WID" length="40" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="类别" colName="LB" length="255" name="LB" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="字段值" colName="ZDZ" length="1000" name="ZDZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="字段名称" colName="ZDMC" length="1000" name="ZDMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否使用" colName="SFSY" length="1" name="SFSY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="排序" colName="PX" length="10" name="PX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

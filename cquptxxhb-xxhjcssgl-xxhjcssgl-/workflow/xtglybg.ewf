@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:emap="http://emap.wisedu.com/flow" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://emap.wisedu.com/flow">
+  <process id="xxhjcssgl.xtglybg" name="系统管理员变更" isExecutable="true">
+    <extensionElements>
+      <emap:operations>
+        <emap:taskcenter state="false" subject="{defName}"></emap:taskcenter>
+        <emap:messagecenter state="false"></emap:messagecenter>
+        <emap:important state="false"></emap:important>
+        <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+        <emap:needSelectNode state="false"></emap:needSelectNode>
+        <emap:disableFlowComment state="false"></emap:disableFlowComment>
+        <emap:elecseal state="false"></emap:elecseal>
+        <emap:international></emap:international>
+      </emap:operations>
+    </extensionElements>
+    <startEvent id="startevent1" name="开始" activiti:initiator="submitUser"></startEvent>
+    <userTask id="xtglybgsq" name="变更申请" activiti:assignee="${submitUser}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="start" name="提交" action="model:T_XXB_XXHJCSS_ZRRBGJL.SAVE" commandType="start" execute="do_start" url="/sys/emapflow/tasks/startFlow.do"></emap:command>
+            <emap:command id="submit" name="提交" action="model:T_XXB_XXHJCSS_ZRRBGJL.SAVE" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="draft" name="暂存" action="model:T_XXB_XXHJCSS_ZRRBGJL.SAVE" commandType="draft" execute="do_start" url="/sys/emapflow/tasks/startFlow.do"></emap:command>
+            <emap:command id="callback" name="撤回" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="xxhbEmapflowTask" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_GB_QUERY"></emap:action>
+            <emap:action name="gbjcsssq"></emap:action>
+            <emap:action name="whsscx"></emap:action>
+            <emap:action name="T_JZG_QUERY"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false" subject="信息化基础设施管理({starterName})-变更申请"></emap:taskcenter>
+          <emap:messagecenter state="false" subject="信息化基础设施管理-变更驳回提醒" content="{starterName}老师：&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+   您在信息化基础设施管理微服务中提交的申请人变更已被{formData.bhry}{currentUserName}驳回，请登录网上服务器大厅 &lt;a href=&quot;http://ehall.cqupt.edu.cn&quot; target=&quot;_blank&quot;&gt;（http://ehall.cqupt.edu.cn）&lt;/a&gt; ，搜索“信息化基础设施管理”进入应用查看驳回原因（列表点击流程状态可查看审核意见），修改后可再次提交。"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+          <emap:oneLegKicking state="false"></emap:oneLegKicking>
+          <emap:needLoginValidate state="false"></emap:needLoginValidate>
+          <emap:international></emap:international>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="xtglybgsq"></sequenceFlow>
+    <userTask id="xxhllyshbg" name="申请单位信息化联络员变更审核" activiti:candidateUsers="${formData.xxhlly}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回至原申请人" backTo="xtglybgsq" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="turnback_1" name="驳回至新申请人" backTo="xglyqr" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+            <emap:command id="callback" name="撤回" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="xxhbEmapflowTask" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY"></emap:action>
+            <emap:action name="bgshxx"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false" subject="信息化基础设施管理({starterName})-变更审核"></emap:taskcenter>
+          <emap:messagecenter state="false" subject="信息化基础设施管理待审提醒" content="老师：&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+    您在信息化基础设施管理微服务中有一条申请人变更待审，请登录网上服务器大厅&lt;a href=&quot;http://ehall.cqupt.edu.cn&quot; target=&quot;_blank&quot;&gt;（http://ehall.cqupt.edu.cn）&lt;/a&gt;，搜索“信息化基础设施管理”进入应用进行相关处理。
+"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+          <emap:oneLegKicking state="false"></emap:oneLegKicking>
+          <emap:needLoginValidate state="false"></emap:needLoginValidate>
+          <emap:international></emap:international>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <userTask id="xxhbshbg" name="信息化办变更审核" activiti:candidateUsers="${formData.xxhb}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回至原申请人" backTo="xtglybgsq" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="turnback" name="驳回至新申请人" backTo="xglyqr" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="xxhbEmapflowTask" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false" subject="信息化基础设施管理({starterName})-变更审核"></emap:taskcenter>
+          <emap:messagecenter state="false" subject="信息化基础设施管理待审提醒" content="老师：&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+    您在信息化基础设施管理微服务中有一条申请人变更待审，请登录网上服务器大厅&lt;a href=&quot;http://ehall.cqupt.edu.cn&quot; target=&quot;_blank&quot;&gt;（http://ehall.cqupt.edu.cn）&lt;/a&gt;，搜索“信息化基础设施管理”进入应用进行相关处理。
+"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+          <emap:oneLegKicking state="false"></emap:oneLegKicking>
+          <emap:needLoginValidate state="false"></emap:needLoginValidate>
+          <emap:international></emap:international>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <endEvent id="endevent1" name="结束">
+      <extensionElements>
+        <emap:operations></emap:operations>
+      </extensionElements>
+    </endEvent>
+    <sequenceFlow id="flow5" sourceRef="xxhbshbg" targetRef="endevent1">
+      <extensionElements>
+        <emap:operations></emap:operations>
+      </extensionElements>
+    </sequenceFlow>
+    <userTask id="xglyqr" name="确认变更" activiti:assignee="${formData.BGHGLY}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="确认变更" action="model:T_XXB_XXHJCSS_ZRRBGJL.MODIFY" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="draft" name="暂存" action="model:T_XXB_XXHJCSS_ZRRBGJL.MODIFY" commandType="draft" execute="do_start" url="/sys/emapflow/tasks/startFlow.do"></emap:command>
+            <emap:command id="termination" name="不同意" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="xxhbEmapflowTask" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY"></emap:action>
+            <emap:action name="bgqrxxtx"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false" subject="信息化基础设施管理({starterName})-确认变更"></emap:taskcenter>
+          <emap:messagecenter state="false" subject="信息化基础设施管理待确认提醒" content="老师:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+    您在信息化基础设施管理微服务中有一条申请人变更待确认，请登录网上服务器大厅&lt;a href=&quot;http://ehall.cqupt.edu.cn&quot; target=&quot;_blank&quot;&gt;（http://ehall.cqupt.edu.cn）&lt;/a&gt;，搜索“信息化基础设施管理”进入应用进行相关处理。
+"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+          <emap:oneLegKicking state="false"></emap:oneLegKicking>
+          <emap:needLoginValidate state="false"></emap:needLoginValidate>
+          <emap:international></emap:international>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow12" sourceRef="xtglybgsq" targetRef="xglyqr">
+      <extensionElements>
+        <emap:operations></emap:operations>
+      </extensionElements>
+    </sequenceFlow>
+    <sequenceFlow id="flow13" sourceRef="xglyqr" targetRef="xxhllyshbg"></sequenceFlow>
+    <userTask id="bmldshbg" name="申请单位负责人变更审核" activiti:candidateUsers="${formData.bmld}">
+      <extensionElements>
+        <emap:operations>
+          <emap:toolbar>
+            <emap:command id="submit" name="通过" commandType="submit" execute="do_submit" url="/sys/emapflow/tasks/execute.do"></emap:command>
+            <emap:command id="turnback" name="驳回至原申请人" backTo="xtglybgsq" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="turnback_1" name="驳回至新申请人" backTo="xglyqr" commandType="turnback" execute="do_turnback" url="/sys/emapflow/tasks/turnback.do"></emap:command>
+            <emap:command id="termination" name="不通过" commandType="termination" execute="do_termination" url="/sys/emapflow/tasks/terminateInstance.do"></emap:command>
+            <emap:command id="callback" name="撤回" commandType="callback" execute="do_callback" url="/sys/emapflow/tasks/callback.do"></emap:command>
+          </emap:toolbar>
+          <emap:form url="xxhbEmapflowTask" readonly="false">
+            <emap:action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY"></emap:action>
+            <emap:action name="bgshxx"></emap:action>
+          </emap:form>
+          <emap:taskcenter state="false" subject="信息化基础设施管理({starterName})-变更审核"></emap:taskcenter>
+          <emap:messagecenter state="false" subject="信息化基础设施管理待审提醒" content="老师：&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+    您在信息化基础设施管理微服务中有一条申请人变更待审，请登录网上服务器大厅&lt;a href=&quot;http://ehall.cqupt.edu.cn&quot; target=&quot;_blank&quot;&gt;（http://ehall.cqupt.edu.cn）&lt;/a&gt;，搜索“信息化基础设施管理”进入应用进行相关处理。
+"></emap:messagecenter>
+          <emap:important state="false"></emap:important>
+          <emap:needSelectAssignees state="false"></emap:needSelectAssignees>
+          <emap:needSelectNode state="false"></emap:needSelectNode>
+          <emap:disableFlowComment state="false"></emap:disableFlowComment>
+          <emap:elecseal state="false"></emap:elecseal>
+          <emap:oneLegKicking state="false"></emap:oneLegKicking>
+          <emap:needLoginValidate state="false"></emap:needLoginValidate>
+          <emap:international></emap:international>
+        </emap:operations>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="flow20" sourceRef="xxhllyshbg" targetRef="bmldshbg"></sequenceFlow>
+    <sequenceFlow id="flow21" sourceRef="bmldshbg" targetRef="xxhbshbg"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_xxhjcssgl.xtglybg">
+    <bpmndi:BPMNPlane bpmnElement="xxhjcssgl.xtglybg" id="BPMNPlane_xxhjcssgl.xtglybg">
+      <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="30.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xtglybgsq" id="BPMNShape_xtglybgsq">
+        <omgdc:Bounds height="55.0" width="105.0" x="110.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xxhllyshbg" id="BPMNShape_xxhllyshbg">
+        <omgdc:Bounds height="55.0" width="105.0" x="400.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xxhbshbg" id="BPMNShape_xxhbshbg">
+        <omgdc:Bounds height="55.0" width="105.0" x="699.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="873.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="xglyqr" id="BPMNShape_xglyqr">
+        <omgdc:Bounds height="55.0" width="105.0" x="260.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="bmldshbg" id="BPMNShape_bmldshbg">
+        <omgdc:Bounds height="55.0" width="105.0" x="550.0" y="102.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="65.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="110.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
+        <omgdi:waypoint x="804.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="873.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow12" id="BPMNEdge_flow12">
+        <omgdi:waypoint x="215.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="260.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow13" id="BPMNEdge_flow13">
+        <omgdi:waypoint x="365.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="400.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow20" id="BPMNEdge_flow20">
+        <omgdi:waypoint x="505.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="550.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow21" id="BPMNEdge_flow21">
+        <omgdi:waypoint x="655.0" y="129.0"></omgdi:waypoint>
+        <omgdi:waypoint x="699.0" y="129.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

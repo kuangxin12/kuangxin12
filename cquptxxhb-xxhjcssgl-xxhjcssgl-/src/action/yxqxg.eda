@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel authorityIndex="" caption="有效期修改" conditionIndex="" displayRef="" displayRefInclude="" displayRefPath="" displayRefPrj="" name="yxqxg" orderIndex="" paramFixRef="biz:YXQUPDATA" paramFixRefInclude="ZT,YXQ" paramFixRefPath="" paramFixRefPrj="" paramRef="biz:YXQUPDATA" paramRefExtra="" paramRefExtraPath="" paramRefExtraPrj="" paramRefInclude="WID,PWID" paramRefPath="" paramRefPrj="" saveLog="true" totalCountType="AUTO" type="UPDATE">
+    <sql>update T_XXB_XXHJCSS_JBXX&#xD;
+set ZT = ?,YXQ = ? &#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

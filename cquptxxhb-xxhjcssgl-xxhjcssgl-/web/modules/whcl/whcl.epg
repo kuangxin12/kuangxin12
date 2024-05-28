@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="whcl" desc="维护处理" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_WH_QUERY" ref="model:T_XXB_XXHJCSS_WH.QUERY" url="src/datamodel/T_XXB_XXHJCSS_WH.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_WH_MODIFY" ref="model:T_XXB_XXHJCSS_WH.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_WH.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="whssjbxx" ref="action:whssjbxx" url="src/action/whssjbxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xxhbwhlb" ref="action:xxhbwhlb" url="src/action/xxhbwhlb.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

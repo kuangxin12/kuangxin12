@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="关闭设施查询" displayRef="model:T_XXB_XXHJCSS_JBXX" name="gbsscx" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="WID,ZT,SFRZH,CK_SFYSQCK" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+where ZT >= 10 OR ZT = 2&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

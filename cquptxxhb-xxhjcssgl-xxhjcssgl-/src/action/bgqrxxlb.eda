@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更确认信息列表" displayRef="model:T_XXB_XXHJCSS_ZRRBGJL" name="bgqrxxlb" paramRef="model:T_XXB_XXHJCSS_ZRRBGJL" paramRefInclude="BGQGLY,BGHGLY,JCSSID,XSJ,XBGDH,YSJ,YBGDH" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_ZRRBGJL&#xD;
+#sub[where $]</sql>
+    <rowFactors>
+      <rowFactor id="cfc70c84-3356-4bf7-81e6-bb272f59a504" name="xtgly">
+        <sql>T_XXB_XXHJCSS_ZRRBGJL.BGHGLY = ${custom.currentUserId}</sql>
+      </rowFactor>
+    </rowFactors>
+  </actionModel>
+</model:Model>

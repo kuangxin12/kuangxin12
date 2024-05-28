@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="xxhbwhlb" order="WID,JCSSID,SQR,WHRYXM,LXDH,JHWHSJ,LY,ZT,PWID,LX">
+    <dataModelRef include="WID:WID,JCSSID:JCSSID,SQR:SQR,WHRYXM:WHRYXM,JHWHSJ:JHWHSJ,LY:LY,ZT:ZT,LXDH:LXDH" modelName="model:T_XXB_XXHJCSS_WH" tableAlias="T_XXB_XXHJCSS_WH">
+      <item name="WID" originName="WID"/>
+      <item name="JCSSID" originName="JCSSID"/>
+      <item name="SQR" originName="SQR"/>
+      <item name="WHRYXM" originName="WHRYXM"/>
+      <item name="JHWHSJ" originName="JHWHSJ">
+        <attribute name="enabled" value="true"/>
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+        <attribute name="web.format" value="yyyy-MM-dd HH:mm:ss"/>
+        <attribute name="web.xtype" value="date-range"/>
+        <attribute name="web.search.xtype" value="date-range"/>
+        <attribute name="web.search.quickSearchXtype" value="date-range"/>
+      </item>
+      <item name="LY" originName="LY"/>
+      <item name="ZT" originName="ZT"/>
+      <item name="LXDH" originName="LXDH"/>
+    </dataModelRef>
+    <dataModelRef include="PWID:PWID,LX:LX" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item groupName="" name="PWID" originName="PWID"/>
+      <item groupName="" name="LX" originName="LX"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

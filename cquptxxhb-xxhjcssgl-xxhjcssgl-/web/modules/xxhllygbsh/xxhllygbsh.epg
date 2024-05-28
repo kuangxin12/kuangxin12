@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="xxhllygbsh" desc="信息化联络员关闭审核" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_GB_QUERY" ref="model:T_XXB_XXHJCSS_GB.QUERY" url="src/datamodel/T_XXB_XXHJCSS_GB.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="gbssjbxx" ref="action:gbssjbxx" url="src/action/gbssjbxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_YXFZR_QUERY" ref="model:T_YXFZR.QUERY" url="src/datamodel/T_YXFZR.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_ZXBZ_DW_QUERY" ref="model:T_ZXBZ_DW.QUERY" url="src/datamodel/T_ZXBZ_DW.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

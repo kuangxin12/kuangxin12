@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="年审审核基础设施信息" displayRef="biz:nsshjcssxx" name="nsshjcssxx" paramRef="biz:nsshjcssxx" paramRefInclude="WID,PWID,LX" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

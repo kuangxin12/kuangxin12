@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="维护设施查询" conditionIndex="2" displayRef="model:T_XXB_XXHJCSS_JBXX" displayRefInclude="WID,MC,SQDW,LX,ZT,YT,CK_SFYSQCK,SFRZH,GLYXM,EMAIL,BGDH,SJ,PWID,XNJ_IP,TGFWQ_IP" displayRefPath="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" displayRefPrj="xxhjcssgl" name="whsscx" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="WID,LX,SFRZH,SQDW,PWID" paramRefPath="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" paramRefPrj="xxhjcssgl" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+where (ZT >= 10 #sub[or$])&#xD;
+#sub[and $]&#xD;
+&#xD;
+&#xD;
+&#xD;
+</sql>
+    <paramRefx conditionIndex="1" include="ZT" order="2" ref="model:T_XXB_XXHJCSS_JBXX"/>
+  </actionModel>
+</model:Model>

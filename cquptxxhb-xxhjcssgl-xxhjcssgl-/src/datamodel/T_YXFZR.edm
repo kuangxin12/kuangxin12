@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_YXFZR" queryOrder="" type="table">
+    <item caption="" colName="ZGH" length="20" name="ZGH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="DWMC" length="200" name="DWMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="DWDM" length="30" name="DWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="JS" length="50" name="JS" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="" colName="WID" length="100" name="WID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

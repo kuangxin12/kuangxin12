@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="cksqqxwh" desc="出口申请权限维护" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_CKQX_QUERY" ref="model:T_XXB_XXHJCSS_CKQX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_CKQX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_CKQX_ADD" ref="model:T_XXB_XXHJCSS_CKQX.ADD" url="src/datamodel/T_XXB_XXHJCSS_CKQX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_CKQX_DELETE" ref="model:T_XXB_XXHJCSS_CKQX.DELETE" url="src/datamodel/T_XXB_XXHJCSS_CKQX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_CKQX_MODIFY" ref="model:T_XXB_XXHJCSS_CKQX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_CKQX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_CKQX_SAVE" ref="model:T_XXB_XXHJCSS_CKQX.SAVE" url="src/datamodel/T_XXB_XXHJCSS_CKQX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="ckqxrycx" ref="action:ckqxrycx" url="src/action/ckqxrycx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="ckqxbj" ref="action:ckqxbj" url="src/action/ckqxbj.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

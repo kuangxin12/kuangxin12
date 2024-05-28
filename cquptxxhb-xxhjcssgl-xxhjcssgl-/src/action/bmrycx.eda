@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="部门人员查询" displayRef="model:T_JZG" displayRefInclude="ZGH,XM,SZDWDM" name="bmrycx" paramRef="model:T_JZG" paramRefInclude="SZDWDM,ZGH" saveLog="true" totalCountType="COUNT" type="QUERY">
+    <sql>select #auto[select],T_JZG.XM||' '||T_JZG.ZGH AS DISPLAY&#xD;
+from T_JZG&#xD;
+WHERE  JZGRYLB='在职人员'&#xD;
+AND SZDWDM in (SELECT A.SZDWDM FROM T_JZG A #sub[where $])</sql>
+  </actionModel>
+</model:Model>

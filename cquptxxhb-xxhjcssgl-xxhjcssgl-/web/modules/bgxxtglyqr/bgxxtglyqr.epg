@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="bgxxtglyqr" desc="变更新系统管理员确认" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY" ref="model:T_XXB_XXHJCSS_ZRRBGJL.QUERY" url="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_ZRRBGJL_SAVE" ref="model:T_XXB_XXHJCSS_ZRRBGJL.SAVE" url="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgqrxxtx" ref="action:bgqrxxtx" url="src/action/bgqrxxtx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_ZRRBGJL_MODIFY" ref="model:T_XXB_XXHJCSS_ZRRBGJL.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="EMAP_FLOW_ID_JZG_QUERY" ref="model:EMAP_FLOW_ID_JZG.QUERY" url="src/datamodel/EMAP_FLOW_ID_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgqrxxlb" ref="action:bgqrxxlb" url="src/action/bgqrxxlb.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgjcss" ref="action:bgjcss" url="src/action/bgjcss.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xgzt" ref="action:xgzt" url="src/action/xgzt.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgjcssxx" ref="action:bgjcssxx" url="src/action/bgjcssxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_YXFZR_QUERY" ref="model:T_YXFZR.QUERY" url="src/datamodel/T_YXFZR.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_JZG_QUERY" ref="model:T_JZG.QUERY" url="src/datamodel/T_JZG.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_ZXBZ_DW_QUERY" ref="model:T_ZXBZ_DW.QUERY" url="src/datamodel/T_ZXBZ_DW.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>

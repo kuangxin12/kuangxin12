@@ -1,0 +1,30 @@
+<article bh-layout-role="single">
+    <h2>审核</h2>
+    <section>
+        <div  class="bh-col-md-12 bh-form-groupname sc-title-borderLeft bh-mb-24">基础设施信息</div>
+       <!--  <h2>基础设施信息</h2> -->
+        <div id="collapse"></div>  
+        <br>         
+        <div id="emapForm"></div>
+		
+
+		<!-- <iframe id ="flow" title = "flow" width = "100%" 
+      src="" 
+      style="height: 486px;margin:0 auto;display:blod">
+      </iframe>  -->
+		<footer>
+		<div id="app">
+		<div style="margin-bottom:15px;display:none" id="shyjdiv">
+					<label class="bh-form-label" for="shyj">审核意见：</label>
+					<textarea id="shyj" class="bh-form-control" style="width: 500px; height:100px;margin-left:15px"
+						rows="2" placeholder=""></textarea>
+				</div>
+			<emap-flow-toolbar :flowcomment="flow_comment" :submitformdata="formdata" :defkey="defkey" ref="myflow"
+				@action_complete="action_complete" :taskid="taskid" :onverify="btnclick"></emap-flow-toolbar>
+			<div class="bh-clearfix"></div>
+			
+		</div>
+		
+	</footer>
+    </section>
+</article>

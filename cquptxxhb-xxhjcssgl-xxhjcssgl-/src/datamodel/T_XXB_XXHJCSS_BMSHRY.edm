@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_BMSHRY" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="40" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="角色类型" colName="JSLX" length="20" name="JSLX" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="radiolist"/>
+      <attribute name="web.form.JSONParam" value="[{'code':'1','value':'1'},{'code':'2','value':'2'}]"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="radiolist"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="b85d2e6e-bf1d-4a28-98af-d92f05408938"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="账号" colName="SFRZH" length="14" name="SFRZH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="姓名" colName="XM" length="255" name="XM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.required" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="部门" colName="DWDM" length="25" name="DWDM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="44e06060-8e70-40e7-b519-3c36ad92c9c2"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="select"/>
+      <attribute name="web.xtype" value="checkboxlist"/>
+    </item>
+    <rowFactors>
+      <rowFactor id="afc4294c-633c-4b64-8c78-9e4132240c78" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="946fe7d9-f154-43a1-bd76-08cd31052fff" name="xxhlly">
+        <sql>T_XXB_XXHJCSS_BMSHRY.DWDM = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="7e4b695e-6336-44b2-bb6d-f170923e4b74" name="bmxxhfgld">
+        <sql>T_XXB_XXHJCSS_BMSHRY.DWDM = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="76c3d2d0-6dbd-41de-8ada-10acc4bfb4f2" name="xxhbld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </dataModel>
+</model:Model>

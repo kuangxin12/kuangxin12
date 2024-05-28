@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bmshryadd" order="WID,JSLX,SFRZH,XM,DWDM">
+    <dataModelRef include="WID:WID,XM:XM,JSLX:JSLX,SFRZH:SFRZH,DWDM:DWDM" modelName="model:T_XXB_XXHJCSS_BMSHRY" tableAlias="T_XXB_XXHJCSS_BMSHRY">
+      <item name="WID" originName="WID"/>
+      <item name="XM" originName="XM">
+        <attribute name="web.url" value="/sys/xxhjcssgl/modules/bmshrywh/jzgmdcx.do"/>
+        <attribute name="web.form.xtype" value="selecttable"/>
+        <attribute name="web.form.placeholder" value="输入姓名搜索，请选择本部门在职人员。"/>
+      </item>
+      <item name="JSLX" originName="JSLX"/>
+      <item name="SFRZH" originName="SFRZH"/>
+      <item name="DWDM" originName="DWDM"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

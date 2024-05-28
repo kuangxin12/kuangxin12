@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="5a8d55f8-b746-4e07-b2d0-088ce6b005d3">
+    <item name="sfrzh" type="String"/>
+  </bizModel>
+  <actionModel caption="test" displayRef="model:T_JZG" displayRefInclude="WID,ZGH,XM,XMPY" name="test" paramFixRef="5a8d55f8-b746-4e07-b2d0-088ce6b005d3" paramRef="model:T_JZG" paramRefInclude="SZDWDM" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select * from t_jzg &#xD;
+where zgh!=?&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

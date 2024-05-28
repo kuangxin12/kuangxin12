@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="教职工单位查询" displayRef="biz:dw" displayRefInclude="DWMC,DWDM" name="jzgdwcx" paramRef="biz:dw" paramRefInclude="JC,DM" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>&#xD;
+select dm as dwdm,jc as dwmc&#xD;
+from t_zxbz_dw&#xD;
+where SFSY=1 and CC=2&#xD;
+and ls in('10000','20000','30000','40000')&#xD;
+#sub[AND $]&#xD;
+ORDER BY to_number(by1) asc </sql>
+  </actionModel>
+</model:Model>

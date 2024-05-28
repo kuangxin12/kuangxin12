@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role:Roles xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:role="http://www.wisedu.com/emap/model/role">
+  <role id="xtgly" name="系统管理员" type="DATA">
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_WH.edm" factor="xtgly" id="f3d2f74a-23fe-4008-b6de-ef9cd1f2d40b" model="T_XXB_XXHJCSS_WH" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_GB.edm" factor="xtgly" id="47f14915-603b-42c5-9872-9290632aaa2c" model="T_XXB_XXHJCSS_GB" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" factor="xtgly" id="2dbd992b-0aef-4a96-ba8b-f970a256fb39" model="T_XXB_XXHJCSS_ZRRBGJL" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" factor="xtgly" id="a427a4cb-c79f-429b-b722-0409acbbbd5f" model="T_XXB_XXHJCSS_JBXX" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgxxlb.eda" factor="xtgly" id="c4111684-04cf-4bc3-8989-598bace7f0e7" model="action:bgxxlb" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgsqxxlb.eda" factor="xtgly" id="c4111684-04cf-4bc3-8989-598bace7f0e7" model="action:bgsqxxlb" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgqrxxlb.eda" factor="xtgly" id="cfc70c84-3356-4bf7-81e6-bb272f59a504" model="action:bgqrxxlb" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgjcss.eda" factor="xtgly" id="8cde232c-2ea1-4d43-906b-b7e74bb08007" model="action:bgjcss" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgrycx.eda" factor="xtgly" id="341c9070-201f-46a0-bb17-6d7af26075a3" model="action:bgrycx" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgjcsszd.eda" factor="bmqx" id="121f9d3e-ea2d-4e88-a185-d1970ef668d6" model="action:bgjcsszd" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_NS.edm" factor="xtgly" id="44f134f2-d96c-4fd0-9b76-8eaf0610409b" model="T_XXB_XXHJCSS_NS" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/nsjcsscx.eda" factor="xtgly" id="ae94bc02-8be1-48f7-a12e-9eb979ff8e31" model="action:nsjcsscx" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/cxyyss.eda" factor="all" id="335db898-0ef9-4a2f-ac33-7c89696e5b5f" model="action:cxyyss" prjRef="xxhjcssgl"/>
+  </role>
+</role:Roles>

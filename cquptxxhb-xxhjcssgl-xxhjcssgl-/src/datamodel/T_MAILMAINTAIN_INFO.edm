@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_MAILMAINTAIN_INFO" queryOrder="" type="table">
+    <item caption="唯一标识" colName="WID" length="50" name="WID" pK="false" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="用户标识" colName="USERID" length="40" name="USERID" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="用户姓名" colName="USERNAME" length="40" name="USERNAME" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="身份证号" colName="IDCARD" length="50" name="IDCARD" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="邮箱账号" colName="MAILACC" length="50" name="MAILACC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="邮箱密码" colName="MAILPWD" length="50" name="MAILPWD" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位名称" colName="DWDM" length="30" name="DWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作人" colName="OPR_PERSON" length="40" name="OPR_PERSON" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作时间" colName="OPR_DATE" length="24" name="OPR_DATE" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

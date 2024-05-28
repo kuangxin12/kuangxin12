@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="信息化办列表查询" displayRef="biz:xxhblbcx" name="xxhblbcx" paramRef="biz:xxhblbcx" paramRefInclude="MC,SQDW,LX,SBFL,GLYXM,XNJ_IP,TGFWQ_IP,SBFLSM,ZT,CK_SFYSQCK,TJSJ,XNJ_CZXT,TGFWQ_CZXT,XNJ_SFPT,TGFWQ_YM,TGFWQ_JJH,WID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

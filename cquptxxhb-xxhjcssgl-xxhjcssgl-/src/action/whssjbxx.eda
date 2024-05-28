@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="维护设施基本信息" displayRef="biz:whssjbxx" name="whssjbxx" paramRef="biz:whssjbxx" paramRefInclude="WID,WID_1,JCSSID,CK_SFYSQCK,PWID" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+left join T_XXB_XXHJCSS_WH&#xD;
+ON T_XXB_XXHJCSS_JBXX.PWID = T_XXB_XXHJCSS_WH.JCSSID&#xD;
+where T_XXB_XXHJCSS_JBXX.PWID = T_XXB_XXHJCSS_WH.JCSSID&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

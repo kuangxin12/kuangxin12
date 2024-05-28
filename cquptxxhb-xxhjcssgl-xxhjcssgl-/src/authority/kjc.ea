@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role:Roles xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:role="http://www.wisedu.com/emap/model/role">
+  <role id="kjc" name="科技处" type="DATA">
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" factor="kjc" id="a322c2d2-78af-4b14-bf95-3e977380ceff" model="T_XXB_XXHJCSS_JBXX" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgjcsszd.eda" factor="xxb" id="f82285f4-7f53-4483-9076-0ca95c9bed2d" model="action:bgjcsszd" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/cxyyss.eda" factor="all" id="335db898-0ef9-4a2f-ac33-7c89696e5b5f" model="action:cxyyss" prjRef="xxhjcssgl"/>
+  </role>
+</role:Roles>

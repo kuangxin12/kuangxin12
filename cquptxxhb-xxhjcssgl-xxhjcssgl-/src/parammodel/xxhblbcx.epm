@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="xxhblbcx" order="WID,PWID,MC,SQDW,LX,ZT,YT,SBFL,SBFLSM,SQLX,CK_SFYSQCK,QTSM,CZR,XNJ_CPU,XNJ_NC,XNJ_CZXT,XNJ_SJYP,TGFWQ_NC,TGFWQ_CPU,TGFWQ_PPXH,TGFWQ_CZXT,TGFWQ_XH,SFRZH,GLYXM,YXQ,EMAIL,BGDH,SJ,XNJ_IP,TGFWQ_YM,TGFWQ_JJH,TGFWQ_SFYZ,TGFWQ_SFYCC,TGFWQ_IP,TGFWQ_WZ,CK_DKH,CK_IP,TJSJ,XNJ_SFPT">
+    <dataModelRef include="WID:WID,PWID:PWID,MC:MC,SQDW:SQDW,LX:LX,ZT:ZT,YT:YT,SBFL:SBFL,SQLX:SQLX,CK_SFYSQCK:CK_SFYSQCK,QTSM:QTSM,CZR:CZR,XNJ_CPU:XNJ_CPU,XNJ_NC:XNJ_NC,XNJ_CZXT:XNJ_CZXT,XNJ_SJYP:XNJ_SJYP,TGFWQ_NC:TGFWQ_NC,TGFWQ_CPU:TGFWQ_CPU,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_XH:TGFWQ_XH,SFRZH:SFRZH,GLYXM:GLYXM,YXQ:YXQ,EMAIL:EMAIL,BGDH:BGDH,SJ:SJ,XNJ_IP:XNJ_IP,TGFWQ_YM:TGFWQ_YM,TGFWQ_JJH:TGFWQ_JJH,TGFWQ_SFYZ:TGFWQ_SFYZ,TGFWQ_SFYCC:TGFWQ_SFYCC,TGFWQ_IP:TGFWQ_IP,TGFWQ_WZ:TGFWQ_WZ,CK_DKH:CK_DKH,CK_IP:CK_IP,TJSJ:TJSJ,XNJ_SFPT:XNJ_SFPT,SBFLSM:SBFLSM" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item name="WID" originName="WID"/>
+      <item name="PWID" originName="PWID"/>
+      <item name="MC" originName="MC"/>
+      <item name="SQDW" originName="SQDW"/>
+      <item name="LX" originName="LX">
+        <attribute name="web.grid.width" value="90px"/>
+      </item>
+      <item name="ZT" originName="ZT"/>
+      <item name="YT" originName="YT"/>
+      <item name="SBFL" originName="SBFL">
+        <attribute name="web.grid.hidden" value="true"/>
+        <attribute name="web.quickSearch" value="false"/>
+      </item>
+      <item name="SQLX" originName="SQLX">
+        <attribute name="web.grid.hidden" value="false"/>
+      </item>
+      <item name="CK_SFYSQCK" originName="CK_SFYSQCK">
+        <attribute name="web.grid.hidden" value="false"/>
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="builder" value="equal"/>
+        <attribute name="builderList" value="cbl_List"/>
+        <attribute name="web.grid.width" value="90px"/>
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="web.xtype" value="select"/>
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="dic" value="e09e470c-545e-4997-8ab7-7abfa280ef88"/>
+      </item>
+      <item name="QTSM" originName="QTSM"/>
+      <item name="CZR" originName="CZR"/>
+      <item name="XNJ_CPU" originName="XNJ_CPU"/>
+      <item name="XNJ_NC" originName="XNJ_NC"/>
+      <item caption="虚拟机操作系统" name="XNJ_CZXT" originName="XNJ_CZXT">
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="web.search.quickSearchXtype" value="text"/>
+        <attribute name="web.xtype" value="text"/>
+        <attribute name="builder" value="m_value_include"/>
+        <attribute name="web.hidden" value="true"/>
+        <attribute name="web.grid.hidden" value="false"/>
+        <attribute name="web.search.hidden" value="false"/>
+        <attribute name="web.grid.fixed" value="false"/>
+      </item>
+      <item name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item caption="服务器操作系统" name="TGFWQ_CZXT" originName="TGFWQ_CZXT">
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="web.search.quickSearchXtype" value="text"/>
+        <attribute name="web.xtype" value="text"/>
+        <attribute name="builder" value="m_value_include"/>
+        <attribute name="web.hidden" value="true"/>
+        <attribute name="web.grid.hidden" value="false"/>
+        <attribute name="web.search.hidden" value="false"/>
+        <attribute name="web.grid.fixed" value="false"/>
+      </item>
+      <item name="TGFWQ_XH" originName="TGFWQ_XH"/>
+      <item name="SFRZH" originName="SFRZH"/>
+      <item name="GLYXM" originName="GLYXM">
+        <attribute name="web.grid.width" value="80px"/>
+      </item>
+      <item name="YXQ" originName="YXQ"/>
+      <item name="EMAIL" originName="EMAIL"/>
+      <item name="BGDH" originName="BGDH"/>
+      <item name="SJ" originName="SJ"/>
+      <item caption="虚拟机IP" name="XNJ_IP" originName="XNJ_IP">
+        <attribute name="web.form.hidden" value="false"/>
+        <attribute name="web.search.hidden" value="false"/>
+      </item>
+      <item name="TGFWQ_YM" originName="TGFWQ_YM">
+        <attribute name="web.search.hidden" value="false"/>
+      </item>
+      <item name="TGFWQ_JJH" originName="TGFWQ_JJH">
+        <attribute name="web.search.hidden" value="false"/>
+      </item>
+      <item name="TGFWQ_SFYZ" originName="TGFWQ_SFYZ"/>
+      <item name="TGFWQ_SFYCC" originName="TGFWQ_SFYCC"/>
+      <item caption="托管服务器IP" name="TGFWQ_IP" originName="TGFWQ_IP">
+        <attribute name="web.form.hidden" value="false"/>
+        <attribute name="web.search.hidden" value="false"/>
+      </item>
+      <item name="TGFWQ_WZ" originName="TGFWQ_WZ"/>
+      <item name="CK_DKH" originName="CK_DKH">
+        <attribute name="web.grid.hidden" value="false"/>
+      </item>
+      <item name="CK_IP" originName="CK_IP"/>
+      <item name="TJSJ" originName="TJSJ">
+        <attribute name="pattern" value="yyyy-MM-dd HH:mm:ss"/>
+        <attribute name="web.hidden" value="false"/>
+        <attribute name="web.xtype" value="date-range"/>
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="web.search.quickSearchXtype" value="date-range"/>
+        <attribute name="web.search.xtype" value="date-range"/>
+        <attribute name="web.form.xtype" value="date-range"/>
+      </item>
+      <item name="XNJ_SFPT" originName="XNJ_SFPT">
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+        <attribute name="web.grid.hidden" value="false"/>
+      </item>
+      <item groupName="基本信息" name="SBFLSM" originName="SBFLSM">
+        <attribute name="web.grid.hidden" value="false"/>
+        <attribute name="useDicType" value="toDisplay"/>
+        <attribute name="web.xtype" value="select"/>
+        <attribute name="web.search.xtype" value="multi-select2"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+        <attribute name="dic" value="b622569d-94c0-4a62-8607-11033495026b"/>
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+        <attribute name="web.hidden" value="false"/>
+        <attribute name="web.grid.width" value="100px"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

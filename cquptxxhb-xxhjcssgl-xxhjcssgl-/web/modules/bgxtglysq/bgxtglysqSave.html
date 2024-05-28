@@ -1,0 +1,46 @@
+<article bh-layout-role="single">
+    <h2>申请</h2>
+    <section>
+     
+      <div id="emapForm"></div>
+      <div id="tsjcss" class="bh-col-md-12 bh-form-groupname bh-mb-24" title="请选择基础设施" bh-role-form-outline="title" style="border:none"></div>
+      <div id="test"></div><br>
+      
+      
+       <div><p id="ti" style="color:black;font-size:15px;clear: both;">选择新申请人：在文本框中输入需要变更申请人的姓名，搜索到之后在下拉选项中选择所要变更的人员。</p></div>  
+     <!--  <iframe id ="flow" title = "flow" width = "100%" 
+      src="" 
+      style="height: 486px;margin:0 auto;display:blod">
+      </iframe>  -->
+    
+     </section>
+      
+    <footer>
+		<!-- <div class="bh-btn bh-btn-primary" id="save" data-action="save">保存</div> -->
+		<div id="app">
+			<emap-flow-toolbar :flowcomment="flow_comment" ref="myflow"
+					:submitformdata="formdata" 
+					:defkey="defkey" 
+					@action_complete="action_complete" 
+				    :taskid="taskid"
+				    :onverify="btnclick">
+			</emap-flow-toolbar>
+			<div class="bh-clearfix"></div>
+		</div>
+		
+		<!--<button id="lczt" class="flow-button ivu-btn ivu-btn-default" style="margin-left:20px">查看流程状态</button>-->
+	</footer>
+	
+</article>
+<style>
+#tishi{
+   background:red
+   color:red;
+   font-size:24px
+}
+p{
+font-size: 15px;
+	margin: 0;
+	color: #666;
+}
+</style>

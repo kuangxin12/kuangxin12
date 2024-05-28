@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="变更基础设施字典" displayRef="model:T_XXB_XXHJCSS_JBXX" name="bgjcsszd" paramRef="model:T_XXB_XXHJCSS_JBXX" paramRefInclude="WID,PWID,SQDW,SFRZH" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <rowFactors>
+      <rowFactor id="121f9d3e-ea2d-4e88-a185-d1970ef668d6" name="bmqx">
+        <sql>T_XXB_XXHJCSS_JBXX.SQDW = &#xD;
+ (select SZDWDM from T_JZG &#xD;
+ where ZGH=${custom.currentUserId})</sql>
+      </rowFactor>
+      <rowFactor id="f82285f4-7f53-4483-9076-0ca95c9bed2d" name="xxb">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+    <sql>select #auto[select] &#xD;
+from T_XXB_XXHJCSS_JBXX&#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

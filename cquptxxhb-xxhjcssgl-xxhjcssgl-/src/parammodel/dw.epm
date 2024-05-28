@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="dw" order="JC,DM,DWMC,DWDM,CC,LS,SFSY,BY1">
+    <dataModelRef include="JC:JC,DM:DM,CC:CC,LS:LS,SFSY:SFSY,BY1:BY1" modelName="model:T_ZXBZ_DW" tableAlias="T_ZXBZ_DW">
+      <item name="JC" originName="JC"/>
+      <item name="DM" originName="DM"/>
+      <item name="CC" originName="CC"/>
+      <item name="LS" originName="LS"/>
+      <item name="SFSY" originName="SFSY"/>
+      <item name="BY1" originName="BY1"/>
+    </dataModelRef>
+    <item caption="单位名称" colName="T_ZXBZ_DW.JC" custom="true" length="180" name="DWMC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="单位代码" colName="T_ZXBZ_DW_DM" custom="true" length="20" name="DWDM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

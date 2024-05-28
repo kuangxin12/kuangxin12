@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="教职工名单查询" displayRef="biz:jzgbd" displayRefInclude="id,name,SZDWDM" name="jzgmdcx" paramRef="biz:jzgbd" paramRefInclude="ZGH,queryopt" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>SELECT #auto[select]  &#xD;
+from T_JZG&#xD;
+where rownum&lt;=100&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

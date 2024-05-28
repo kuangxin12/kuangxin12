@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="whsq" order="WID,SQR,SQRY,WHJCSS,WHRYXM,LXDH,JHWHSJ,WHSJ,JCSSID,LY">
+    <dataModelRef include="WID:WID,SQR:SQR,WHRYXM:WHRYXM,JHWHSJ:JHWHSJ,JCSSID:JCSSID,LY:LY,LXDH:LXDH" modelName="model:T_XXB_XXHJCSS_WH" tableAlias="T_XXB_XXHJCSS_WH">
+      <item name="WID" originName="WID"/>
+      <item name="SQR" originName="SQR">
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="WHRYXM" originName="WHRYXM"/>
+      <item name="JHWHSJ" originName="JHWHSJ">
+        <attribute name="web.form.required" value="false"/>
+        <attribute name="web.form.hidden" value="true"/>
+      </item>
+      <item name="JCSSID" originName="JCSSID">
+        <attribute name="web.form.hidden" value="true"/>
+        <attribute name="web.required" value="false"/>
+      </item>
+      <item name="LY" originName="LY"/>
+      <item name="LXDH" originName="LXDH"/>
+    </dataModelRef>
+    <item caption="所维护的基础设施" colName="WHJCSS" custom="true" name="WHJCSS" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="select"/>
+      <attribute name="web.required" value="true"/>
+    </item>
+    <item caption="计划维护时间" colName="WHSJ" custom="true" name="WHSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.xtype" value="date-local"/>
+    </item>
+    <item caption="申请人" colName="SQRY" custom="true" name="SQRY" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

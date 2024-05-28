@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<role:Roles xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:role="http://www.wisedu.com/emap/model/role">
+  <role id="xxhb" name="信息化办" type="DATA">
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_GB.edm" factor="xxhb" id="ae5432b6-30d6-4b53-9e8a-b261ba7431d6" model="T_XXB_XXHJCSS_GB" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" factor="xxhb" id="1db9bcf6-eca9-443a-8c5f-9ffeff97a374" model="T_XXB_XXHJCSS_ZRRBGJL" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_WH.edm" factor="xxhb" id="a2d5dc1b-dcf7-46ed-a073-490017c450cc" model="T_XXB_XXHJCSS_WH" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" factor="xxhb" id="9661ecc4-5153-4567-af7d-57bb601e00d2" model="T_XXB_XXHJCSS_JBXX" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgrycx.eda" factor="xxhb" id="f72af36f-0c82-48d2-9211-0fe9fa20da2b" model="action:bgrycx" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/bgjcsszd.eda" factor="xxb" id="f82285f4-7f53-4483-9076-0ca95c9bed2d" model="action:bgjcsszd" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_NS.edm" factor="xxhb" id="448d0f35-31c1-4798-be39-1030b82ff6e5" model="T_XXB_XXHJCSS_NS" prjRef="xxhjcssgl"/>
+    <data edmRef="src/action/cxyyss.eda" factor="all" id="335db898-0ef9-4a2f-ac33-7c89696e5b5f" model="action:cxyyss" prjRef="xxhjcssgl"/>
+    <data edmRef="src/datamodel/T_XXB_XXHJCSS_BMSHRY.edm" factor="xxhb" id="afc4294c-633c-4b64-8c78-9e4132240c78" model="T_XXB_XXHJCSS_BMSHRY" prjRef="xxhjcssgl"/>
+  </role>
+</role:Roles>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_LTT_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_JBXXLS" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="100" name="WID" pK="false" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="PWID" colName="PWID" length="50" name="PWID" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="申请类型" colName="SQLX" length="50" name="SQLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="名称" colName="MC" length="100" name="MC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="申请单位" colName="SQDW" length="50" name="SQDW" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="用途" colName="YT" length="500" name="YT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="类型" colName="LX" length="50" name="LX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="其他说明" colName="QTSM" length="500" name="QTSM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="有效期" colName="YXQ" length="7" name="YXQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="状态" colName="ZT" length="22" name="ZT" type="double">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="a6c4f109-b115-4aa0-afcf-6b0efaf18df1"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="管理员账号" colName="SFRZH" length="7" name="SFRZH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="管理员" colName="GLYXM" length="100" name="GLYXM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="办公电话" colName="BGDH" length="20" name="BGDH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="手机" colName="SJ" length="11" name="SJ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="电子邮箱" colName="EMAIL" length="100" name="EMAIL" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="品牌型号" colName="TGFWQ_PPXH" length="50" name="TGFWQ_PPXH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作系品牌型号" colName="TGFWQ_CZXT" length="50" name="TGFWQ_CZXT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="内存" colName="TGFWQ_NC" length="50" name="TGFWQ_NC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="服务器配置是否与申请表一致" colName="TGFWQ_SFYZ" length="50" name="TGFWQ_SFYZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否已除尘" colName="TGFWQ_SFYCC" length="50" name="TGFWQ_SFYCC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="主机IP" colName="TGFWQ_IP" length="50" name="TGFWQ_IP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="域名" colName="TGFWQ_YM" length="50" name="TGFWQ_YM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="放置机架号" colName="TGFWQ_JJH" length="50" name="TGFWQ_JJH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="位置" colName="TGFWQ_WZ" length="50" name="TGFWQ_WZ" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="操作系统" colName="XNJ_CZXT" length="50" name="XNJ_CZXT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="分配IP地址" colName="XNJ_IP" length="50" name="XNJ_IP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否申请出口" colName="CK_SFYSQCK" length="10" name="CK_SFYSQCK" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="主机IP" colName="CK_IP" length="50" name="CK_IP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="主机申请开放端口号" colName="CK_DKH" length="50" name="CK_DKH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="信息化办操作人" colName="CZR" length="50" name="CZR" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="网络基础设施ID" colName="WLJCSSWID" length="50" name="WLJCSSWID" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="年审截止日期" colName="NSJZRQ" length="7" name="NSJZRQ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="年审年度" colName="NSND" length="50" name="NSND" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="复制时间" colName="FZSJ" length="7" name="FZSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="设备分类" colName="SBFL" length="50" name="SBFL" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="内存" colName="XNJ_NC" length="50" name="XNJ_NC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="CPU" colName="XNJ_CPU" length="50" name="XNJ_CPU" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="型号" colName="TGFWQ_XH" length="50" name="TGFWQ_XH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="CPU" colName="TGFWQ_CPU" length="50" name="TGFWQ_CPU" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="数据硬盘" colName="XNJ_SJYP" length="50" name="XNJ_SJYP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="提交时间" colName="TJSJ" length="7" name="TJSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="所属平台" colName="XNJ_SFPT" length="50" name="XNJ_SFPT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="服务器类型" colName="TGFWQ_FWQLX" length="100" name="TGFWQ_FWQLX" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="宽度" colName="TGFWQ_WIDTH" length="100" name="TGFWQ_WIDTH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="高度" colName="TGFWQ_HEIGHT" length="100" name="TGFWQ_HEIGHT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="深度" colName="TGFWQ_DEPTH" length="100" name="TGFWQ_DEPTH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="服务器拆箱照片" colName="TGFWQ_PHOTO" length="100" name="TGFWQ_PHOTO" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="设备分类说明" colName="SBFLSM" length="50" name="SBFLSM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="MAC地址" colName="TGFWQ_MAC" length="255" name="TGFWQ_MAC" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

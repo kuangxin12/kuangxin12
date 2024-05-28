@@ -1,0 +1,56 @@
+﻿<article bh-layout-role="single" class="cs">
+    <h2>信息基础设施关闭审核</h2>
+    <section>
+     <div class="bh-col-md-7">
+        <div id="emapAdvancedQuery"></div>
+		<div class='bh-advancedQuery-groupName'>任务状态：</div>
+		<div class='bh-advancedQuery-groupList bh-label-radio-group'>
+			<!-- 	<div class='bh-label-radio bh-active' data-action='query' data='ALL_TASK'>全部</div> -->
+				<div class='bh-label-radio' data-action='query' data='ALL'>全部</div>
+			<div class=' bh-label-radio bh-active' data-action='query'data='NOTEND'>待办</div>
+			<div class='bh-label-radio' data-action='query' data='ENDED'>已办</div>
+		</div>
+        <div class="bh-mb-16">
+            <!-- <div class="bh-btn bh-btn-primary" data-action="add">新增</div>
+            <div class="bh-btn bh-btn-default" data-action="delete">删除</div>-->
+            <div class="bh-btn bh-btn-default" data-action="export">导出</div> 
+            <div class="bh-btn bh-btn-default" data-action="custom-column">自定义显示列</div>
+             <div class="bh-btn bh-btn-default" data-action="handbook">操作手册下载</div>
+        </div>
+       </div>
+        <div class="bh-col-md-5">
+	         <div style="border:aquamarine solid 2px ;border-radius:10px;height: 150px;width: 50%;margin:0 auto;background-repeat: no-repeat;">
+				<h2 align="center" style="color:#ff4452 ;margin:10px auto;font-size:25px">您的审核数据<div class="bh-btn bh-btn-primary" data-action="getShData">点击刷新</div></h2>
+				<div style="height:80px;width:40%;float: left;background-color: #f5f7f8;margin: 10px 10px;text-align: center;">
+					<p id="gbsh1" style="color: #8b8a64;font-size: 30px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+					<p style="font-size: 15px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">全部</p>
+				</div>
+				<div style="height:80px;width:40%;float: left;background-color: #f5f7f8;margin: 10px 10px;text-align: center;">
+					<p id="gbsh2" style="color: #8b8a64;font-size: 30px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+					<p style="font-size: 15px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">待办</p>
+				</div>
+				<div style="height:80px;width:27%;float: left;background-color: #f5f7f8;margin: 10px 10px;text-align: center;display: none;">
+					<p id="gbsh3" style="color: #8b8a64;font-size: 30px;margin-bottom: 5px;margin-top: 10px;">暂无</p>
+					<p style="font-size: 15px;color: #8b8a64;margin-top: 10px;margin-bottom:5px">已办</p>
+				</div>
+			</div>
+		   </div>  
+        <div id="emapdatatable"></div>
+         <iframe id="loadFileHide" style="display: none;"></iframe>
+    </section>
+    <aside>
+        <script type="text/template">
+            <!--侧边栏标题-->
+            <h3>详情</h3>
+            <!--侧边栏内容-->
+            <section>
+                <div id="dialogInfoForm"></div>
+            </section>
+            <!--侧边栏页脚-->
+            <footer>
+                <div class="bh-btn bh-btn-primary" id="syddkDetailEdit">编辑</div>
+                <div class="bh-btn bh-btn-default" id="syddkDetailClose">关闭</div>
+            </footer>
+        </script>
+    </aside>
+</article>

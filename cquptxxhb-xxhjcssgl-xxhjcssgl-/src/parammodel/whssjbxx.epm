@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="whssjbxx" order="WID,MC,SQDW,LX,YT,TGFWQ_PPXH,TGFWQ_CZXT,XNJ_CPU,TGFWQ_NC,CK_IP,CK_DKH,CK_SFYSQCK,WID_1,SQR,JCSSID,JHWHSJ,WHRYXM,LXDH,LY,PWID,XNJ_CZXT,XNJ_NC,TGFWQ_XH,TGFWQ_CPU,XNJ_SJYP,XNJ_IP,TGFWQ_YM,TGFWQ_JJH,TGFWQ_SFYZ,TGFWQ_SFYCC,TGFWQ_IP,TGFWQ_WZ,XNJ_SFPT">
+    <dataModelRef include="WID:WID,MC:MC,SQDW:SQDW,YT:YT,LX:LX,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_NC:TGFWQ_NC,CK_IP:CK_IP,CK_DKH:CK_DKH,CK_SFYSQCK:CK_SFYSQCK,XNJ_CZXT:XNJ_CZXT,PWID:PWID,XNJ_CPU:XNJ_CPU,XNJ_NC:XNJ_NC,TGFWQ_XH:TGFWQ_XH,TGFWQ_CPU:TGFWQ_CPU,XNJ_SJYP:XNJ_SJYP,XNJ_IP:XNJ_IP,TGFWQ_YM:TGFWQ_YM,TGFWQ_JJH:TGFWQ_JJH,TGFWQ_SFYZ:TGFWQ_SFYZ,TGFWQ_SFYCC:TGFWQ_SFYCC,TGFWQ_IP:TGFWQ_IP,TGFWQ_WZ:TGFWQ_WZ,XNJ_SFPT:XNJ_SFPT" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item name="WID" originName="WID"/>
+      <item name="MC" originName="MC"/>
+      <item name="SQDW" originName="SQDW"/>
+      <item name="YT" originName="YT"/>
+      <item name="LX" originName="LX">
+        <attribute name="web.form.hidden" value="false"/>
+      </item>
+      <item name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item name="TGFWQ_CZXT" originName="TGFWQ_CZXT"/>
+      <item name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item name="CK_IP" originName="CK_IP"/>
+      <item name="CK_DKH" originName="CK_DKH"/>
+      <item groupName="基本信息" name="CK_SFYSQCK" originName="CK_SFYSQCK">
+        <attribute name="web.hidden" value="true"/>
+      </item>
+      <item groupName="虚拟机需求信息" name="XNJ_CZXT" originName="XNJ_CZXT"/>
+      <item name="PWID" originName="PWID"/>
+      <item name="XNJ_CPU" originName="XNJ_CPU"/>
+      <item name="XNJ_NC" originName="XNJ_NC"/>
+      <item name="TGFWQ_XH" originName="TGFWQ_XH"/>
+      <item name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item groupName="虚拟机需求信息" name="XNJ_IP" originName="XNJ_IP"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_YM" originName="TGFWQ_YM"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_JJH" originName="TGFWQ_JJH"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_SFYZ" originName="TGFWQ_SFYZ"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_SFYCC" originName="TGFWQ_SFYCC"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_IP" originName="TGFWQ_IP"/>
+      <item groupName="托管服务器需求信息" name="TGFWQ_WZ" originName="TGFWQ_WZ"/>
+      <item groupName="虚拟机需求信息" name="XNJ_SFPT" originName="XNJ_SFPT">
+        <attribute name="web.form.hidden" value="false"/>
+      </item>
+    </dataModelRef>
+    <dataModelRef include="WID:WID_1,SQR:SQR,JCSSID:JCSSID,WHRYXM:WHRYXM,JHWHSJ:JHWHSJ,LY:LY,LXDH:LXDH" modelName="model:T_XXB_XXHJCSS_WH" tableAlias="T_XXB_XXHJCSS_WH">
+      <item groupName="申请信息" name="WID_1" originName="WID"/>
+      <item groupName="申请信息" name="SQR" originName="SQR"/>
+      <item caption="维护设施" groupName="申请信息" name="JCSSID" originName="JCSSID"/>
+      <item groupName="申请信息" name="WHRYXM" originName="WHRYXM"/>
+      <item groupName="申请信息" name="JHWHSJ" originName="JHWHSJ"/>
+      <item groupName="申请信息" name="LY" originName="LY"/>
+      <item groupName="申请信息" name="LXDH" originName="LXDH"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

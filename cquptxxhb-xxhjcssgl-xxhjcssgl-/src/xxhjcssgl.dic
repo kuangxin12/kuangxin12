@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary:DictionaryTables xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dictionary="http://com.wisedu.emap.dictionary/1.0">
+  <dictionaryTable dicType="BASIC" id="44e06060-8e70-40e7-b519-3c36ad92c9c2" keyColumn="DWDM" name="部门查询" ref="" refAction="action:bmcx" valueColumn="DWJC"/>
+  <dictionaryTable dicType="BASIC" expression="" id="b8541a6e-71b1-4a84-8f8d-98ef4393458b" jsonCode="" keyColumn="PWID" name="维护基础设施" ref="" refAction="action:whsscx" valueColumn="MC">
+    <jsonFrage></jsonFrage>
+  </dictionaryTable>
+  <dictionaryTable dicType="BASIC" id="40e045d6-0dae-4fd0-95fd-d9e6d0c58161" keyColumn="ZGH" name="管理人员" ref="T_JZG" refAction="model:T_JZG.QUERY" valueColumn="XM"/>
+  <dictionaryTable dicType="BASIC" id="cf2040bf-270a-4dfe-8dfc-4b8429bad6b1" keyColumn="PWID" name="关闭基础设施" ref="" refAction="action:gbsscx" valueColumn="MC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='BMSHRY'" id="b85d2e6e-bf1d-4a28-98af-d92f05408938" keyColumn="ZDZ" name="部门审核人员角色" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" id="0be51edf-5579-4b23-b065-c8c6d3f37dc8" keyColumn="PWID" name="基础设施" ref="T_XXB_XXHJCSS_JBXX" refAction="model:T_XXB_XXHJCSS_JBXX.QUERY" valueColumn="MC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='SBFL' and SFSY='1'" id="063fd86b-74e1-4f14-a764-c620c44c312d" keyColumn="ZDZ" name="设备分类字典" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" id="13e9a820-55cc-42b9-bfe9-7350587b7a24" keyColumn="ZGH" name="变更人员查询" ref="" refAction="action:bgrycx" valueColumn="XM"/>
+  <dictionaryTable dicType="BASIC" id="97539ec1-121a-4580-ac68-a3e7b85ce062" keyColumn="PWID" name="变更基础设施查询" ref="" refAction="action:bgjcsszd" valueColumn="MC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='NC' and SFSY='1'" id="65b0efaf-ae7a-4472-9474-69119c04c1ab" keyColumn="ZDZ" name="内存字典" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='XNJCPU' and SFSY='1'" id="4e96943a-a036-4c29-ad54-50e80302bda0" keyColumn="ZDZ" name="服务器CPU字典" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='XNJCPU' and SFSY='1'" id="4597f46f-2656-4c26-a572-a366c513da5b" keyColumn="ZDZ" name="虚拟机CPU字典" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='XNJSJYP'and SFSY='1'" id="bff954b4-b36b-4e13-af4e-093e8a403c20" keyColumn="ZDZ" name="数据硬盘字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='XNJCZXT'and SFSY='1'" id="abf2d05e-022c-46dd-99c8-08f5d0ff4c53" keyColumn="ZDZ" name="虚拟机操作系统字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='FWQPP' and SFSY='1'" id="2dd83d71-1836-4387-b1eb-1cfc0d35ed1b" keyColumn="ZDZ" name="品牌字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='FWQCZXT' and SFSY='1'" id="91767a27-94c0-4d51-bc72-f1ed075b1557" keyColumn="ZDZ" name="服务器操作系统字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='SFPT' and SFSY='1'" id="3e6a716c-663a-4dad-85ff-75f45c7e8c14" keyColumn="ZDZ" name="所属平台字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='SBFLSM' and SFSY='1'" id="b622569d-94c0-4a62-8607-11033495026b" keyColumn="ZDZ" name="设备分类说明字典" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='SFSQCK' and SFSY='1'" id="e09e470c-545e-4997-8ab7-7abfa280ef88" keyColumn="ZDZ" name="出口字典" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='TGFWQ_FWQLX' and SFSY='1'" id="6b6a9d60-9620-4154-9506-fe34801c7dab" keyColumn="ZDZ" name="服务器类型" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='FJH' and SFSY='1'" id="26bbca71-5dc9-4f9e-9a33-fb00e0805e2a" keyColumn="ZDZ" name="房间号" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='TGFWQ_CN' and SFSY='1'" id="76921eb8-1266-4387-8573-8feb6a89a343" keyColumn="ZDZ" name="服务器安全承诺" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='XNJ_CN' and SFSY='1'" id="29ce2de5-8ff4-438a-831f-0815fd298081" keyColumn="ZDZ" name="虚拟机安全承诺" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='GB_TX' and SFSY='1'" id="7d8dde0a-254f-461f-993f-1349ca76a718" keyColumn="ZDZ" name="关闭提醒" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+  <dictionaryTable dicType="BASIC" expression="LB='JBXX_ZT' and SFSY='1'" id="a6c4f109-b115-4aa0-afcf-6b0efaf18df1" keyColumn="ZDZ" name="状态" orderColumn="PX" ref="T_XXB_XXHJCSS_XLZD" refAction="model:T_XXB_XXHJCSS_XLZD.QUERY" valueColumn="ZDMC"/>
+</dictionary:DictionaryTables>

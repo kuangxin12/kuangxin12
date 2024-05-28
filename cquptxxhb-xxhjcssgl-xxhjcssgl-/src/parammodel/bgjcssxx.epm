@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bgjcssxx" order="WID,PWID,MC,SQDW,LX,YT,SBFL,XNJ_CZXT,TGFWQ_PPXH,TGFWQ_CZXT,XNJ_CPU,TGFWQ_NC,XNJ_NC,TGFWQ_XH,TGFWQ_MAC,TGFWQ_CPU,XNJ_SJYP,TGFWQ_IP,XNJ_IP">
+    <dataModelRef include="WID:WID,PWID:PWID,MC:MC,SQDW:SQDW,LX:LX,YT:YT,XNJ_CZXT:XNJ_CZXT,SBFL:SBFL,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_NC:TGFWQ_NC,XNJ_CPU:XNJ_CPU,XNJ_NC:XNJ_NC,TGFWQ_XH:TGFWQ_XH,TGFWQ_CPU:TGFWQ_CPU,XNJ_SJYP:XNJ_SJYP,TGFWQ_IP:TGFWQ_IP,XNJ_IP:XNJ_IP,TGFWQ_MAC:TGFWQ_MAC" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item groupName="基本信息" name="WID" originName="WID"/>
+      <item groupName="基本信息" name="PWID" originName="PWID"/>
+      <item groupName="基本信息" name="MC" originName="MC"/>
+      <item groupName="基本信息" name="SQDW" originName="SQDW"/>
+      <item groupName="基本信息" name="LX" originName="LX">
+        <attribute name="web.form.hidden" value="false"/>
+      </item>
+      <item groupName="基本信息" name="YT" originName="YT"/>
+      <item groupName="基本信息" name="XNJ_CZXT" originName="XNJ_CZXT"/>
+      <item groupName="基本信息" name="SBFL" originName="SBFL"/>
+      <item groupName="基本信息" name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item groupName="基本信息" name="TGFWQ_CZXT" originName="TGFWQ_CZXT"/>
+      <item groupName="基本信息" name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item groupName="基本信息" name="XNJ_CPU" originName="XNJ_CPU"/>
+      <item groupName="基本信息" name="XNJ_NC" originName="XNJ_NC"/>
+      <item groupName="基本信息" name="TGFWQ_XH" originName="TGFWQ_XH"/>
+      <item groupName="基本信息" name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item groupName="基本信息" name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item groupName="基本信息" name="TGFWQ_IP" originName="TGFWQ_IP"/>
+      <item groupName="基本信息" name="XNJ_IP" originName="XNJ_IP"/>
+      <item groupName="基本信息" name="TGFWQ_MAC" originName="TGFWQ_MAC"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

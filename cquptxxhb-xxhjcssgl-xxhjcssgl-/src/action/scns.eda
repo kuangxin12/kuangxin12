@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel authorityIndex="" caption="删除年审" conditionIndex="" displayRef="" displayRefInclude="" displayRefPath="" displayRefPrj="" name="scns" orderIndex="" paramRef="model:T_XXB_XXHJCSS_NS" paramRefExtra="" paramRefExtraPath="" paramRefExtraPrj="" paramRefInclude="WLJCSSWID" paramRefPath="" paramRefPrj="" saveLog="true" totalCountType="AUTO" type="UPDATE">
+    <sql>delete from T_XXB_XXHJCSS_NS  &#xD;
+#sub[where $]</sql>
+  </actionModel>
+</model:Model>

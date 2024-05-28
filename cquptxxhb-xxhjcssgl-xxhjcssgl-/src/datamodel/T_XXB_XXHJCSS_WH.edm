@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_WH" queryOrder="" type="table">
+    <item caption="" colName="WID" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="基础设施" colName="JCSSID" foreignName="" length="100" name="JCSSID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.JSONParam" value=""/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="0be51edf-5579-4b23-b065-c8c6d3f37dc8"/>
+      <attribute name="web.grid.width" value="200px"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.grid.required" value="true"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+    </item>
+    <item caption="申请人" colName="SQR" foreignName="" groupName="" length="50" name="SQR" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="builder" value="m_value_include"/>
+      <attribute name="web.grid.width" value="80px"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="40e045d6-0dae-4fd0-95fd-d9e6d0c58161"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.xtype" value="multi-select2"/>
+      <attribute name="web.form.xtype" value="text"/>
+    </item>
+    <item caption="维护人员姓名" colName="WHRYXM" foreignName="" length="200" name="WHRYXM" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.grid.width" value="10%"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="维护人员手机号码" colName="LXDH" foreignName="" length="255" name="LXDH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.checkType" value="custom[number]"/>
+      <attribute name="web.grid.width" value="150px"/>
+    </item>
+    <item caption="计划维护时间" colName="JHWHSJ" foreignName="" length="7" name="JHWHSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.format" value="yyyy-MM-dd"/>
+      <attribute name="web.form.required" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.xtype" value="date-local"/>
+      <attribute name="pattern" value="yyyy-MM-dd"/>
+      <attribute name="web.grid.width" value="120px"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+    </item>
+    <item caption="理由" colName="LY" foreignName="" length="500" name="LY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.xtype" value="textarea"/>
+      <attribute name="web.checkSize" value="160"/>
+    </item>
+    <item caption="状态" colName="ZT" groupName="" length="5" name="ZT" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <rowFactors>
+      <rowFactor id="97e48633-b95f-4e1b-b5a9-9ebca82d89a0" name="xtgly">
+        <sql>T_XXB_XXHJCSS_WH.SQR = ${custom.currentUserId}</sql>
+      </rowFactor>
+      <rowFactor id="a2d5dc1b-dcf7-46ed-a073-490017c450cc" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="4a9859a1-9511-4f9f-bf90-84fcf1083f2c" name="xxhbld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </dataModel>
+</model:Model>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_ZRRBGJL" queryOrder="BGTJSJ Desc" type="table">
+    <item caption="WID" colName="WID" groupName="申请信息" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.hidden" value="true"/>
+    </item>
+    <item caption="基础设施" colName="JCSSID" foreignName="" groupName="申请信息" length="2000" name="JCSSID" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_include"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="97539ec1-121a-4580-ac68-a3e7b85ce062"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.grid.width" value="230px"/>
+      <attribute name="web.quickSearch" value="true"/>
+    </item>
+    <item caption="变更前申请人" colName="BGQGLY" foreignName="" groupName="申请信息" length="20" name="BGQGLY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="dic" value="40e045d6-0dae-4fd0-95fd-d9e6d0c58161"/>
+      <attribute name="builder" value="include"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+    </item>
+    <item caption="变更后申请人" colName="BGHGLY" foreignName="" groupName="申请信息" length="20" name="BGHGLY" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="useDicType" value="toDisplay"/>
+      <attribute name="builder" value="m_value_equal"/>
+      <attribute name="builderList" value="cbl_m_List"/>
+      <attribute name="dic" value="13e9a820-55cc-42b9-bfe9-7350587b7a24"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="multi-select2"/>
+      <attribute name="web.search.xtype" value="multi-select2"/>
+      <attribute name="web.xtype" value="select"/>
+    </item>
+    <item caption="变更提交时间" colName="BGTJSJ" foreignName="" groupName="申请信息" length="7" name="BGTJSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.form.hidden" value="true"/>
+      <attribute name="defaultValue" value="env:custom.currentDatetime"/>
+      <attribute name="forceDefault" value="true"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+      <attribute name="web.grid.width" value="150px"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.xtype" value="date-range"/>
+      <attribute name="web.search.xtype" value="date-range"/>
+      <attribute name="web.search.quickSearchXtype" value="date-range"/>
+    </item>
+    <item caption="新申请人邮箱" colName="XEMAIL" groupName="新申请人信息" length="50" name="XEMAIL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="新申请人手机" colName="XSJ" foreignName="" groupName="新申请人信息" length="11" name="XSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.checkType" value="custom[phone]"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+      <attribute name="web.search.xtype" value="text"/>
+      <attribute name="builder" value="m_value_include"/>
+    </item>
+    <item caption="新申请人办公电话" colName="XBGDH" groupName="新申请人信息" length="8" name="XBGDH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.checkType" value="custom[tel]"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="原申请人邮箱" colName="YEMAIL" groupName="原申请人信息" length="50" name="YEMAIL" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <item caption="原申请人手机" colName="YSJ" groupName="原申请人信息" length="11" name="YSJ" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.quickSearch" value="true"/>
+      <attribute name="web.search.quickSearchXtype" value="text"/>
+      <attribute name="web.search.xtype" value="text"/>
+      <attribute name="builder" value="m_value_include"/>
+    </item>
+    <item caption="原申请人办公电话" colName="YBGDH" groupName="原申请人信息" length="8" name="YBGDH" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="web.grid.hidden" value="true"/>
+    </item>
+    <rowFactors>
+      <rowFactor id="342648d5-18a1-4af1-add6-13faab739650" name="xxhlly">
+        <sql>(&#xD;
+			SELECT&#xD;
+			(CASE B.CC WHEN '3' THEN B.LS ELSE A.SZDWDM END)SZDWDM&#xD;
+			FROM&#xD;
+				T_JZG A,T_ZXBZ_DW B&#xD;
+			WHERE&#xD;
+				A.SZDWDM=B.DM AND A.ZGH = T_XXB_XXHJCSS_ZRRBGJL.BGHGLY&#xD;
+		) IN (&#xD;
+			SELECT&#xD;
+				DWDM&#xD;
+			FROM&#xD;
+				T_YXFZR&#xD;
+			WHERE&#xD;
+				T_YXFZR.ZGH =${custom.currentUserId}&#xD;
+			AND T_YXFZR.JS = '信息化联络员'&#xD;
+		)</sql>
+      </rowFactor>
+      <rowFactor id="a7f4b164-5017-4c18-8eb7-f18a11e6601a" name="bmxxhfgld">
+        <sql>(&#xD;
+			SELECT&#xD;
+			(CASE B.CC WHEN '3' THEN B.LS ELSE A.SZDWDM END)SZDWDM&#xD;
+			FROM&#xD;
+				T_JZG A,T_ZXBZ_DW B&#xD;
+			WHERE&#xD;
+				A.SZDWDM=B.DM AND A.ZGH = T_XXB_XXHJCSS_ZRRBGJL.BGHGLY&#xD;
+		) IN (&#xD;
+			SELECT&#xD;
+				DWDM&#xD;
+			FROM&#xD;
+				T_YXFZR&#xD;
+			WHERE&#xD;
+				T_YXFZR.ZGH =${custom.currentUserId}&#xD;
+			AND T_YXFZR.JS = '部门信息化分管领导'&#xD;
+		)</sql>
+      </rowFactor>
+      <rowFactor id="1db9bcf6-eca9-443a-8c5f-9ffeff97a374" name="xxhb">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="764341f5-7744-4b18-bf8b-c87c3f422436" name="xtgly">
+        <sql></sql>
+      </rowFactor>
+      <rowFactor id="c603c13b-dd33-4379-b242-54314fc47f34" name="xxhbld">
+        <sql></sql>
+      </rowFactor>
+    </rowFactors>
+  </dataModel>
+</model:Model>

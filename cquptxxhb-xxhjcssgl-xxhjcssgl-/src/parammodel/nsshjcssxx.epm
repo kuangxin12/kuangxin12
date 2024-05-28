@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="nsshjcssxx" order="WID,PWID,MC,SQDW,LX,YT,SBFL,TGFWQ_CZXT,TGFWQ_PPXH,TGFWQ_CPU,TGFWQ_NC,XNJ_CPU,XNJ_NC,XNJ_CZXT,XNJ_SJYP,TGFWQ_XH,YXQ,TGFWQ_IP,XNJ_IP,TJSJ">
+    <dataModelRef include="WID:WID,PWID:PWID,MC:MC,SQDW:SQDW,LX:LX,YT:YT,SBFL:SBFL,TGFWQ_CZXT:TGFWQ_CZXT,TGFWQ_PPXH:TGFWQ_PPXH,TGFWQ_CPU:TGFWQ_CPU,TGFWQ_NC:TGFWQ_NC,XNJ_CPU:XNJ_CPU,XNJ_NC:XNJ_NC,XNJ_CZXT:XNJ_CZXT,XNJ_SJYP:XNJ_SJYP,TGFWQ_XH:TGFWQ_XH,YXQ:YXQ,TGFWQ_IP:TGFWQ_IP,XNJ_IP:XNJ_IP,TJSJ:TJSJ" modelName="model:T_XXB_XXHJCSS_JBXX" tableAlias="T_XXB_XXHJCSS_JBXX">
+      <item name="WID" originName="WID"/>
+      <item name="PWID" originName="PWID"/>
+      <item name="MC" originName="MC"/>
+      <item name="SQDW" originName="SQDW"/>
+      <item name="LX" originName="LX"/>
+      <item name="YT" originName="YT"/>
+      <item name="SBFL" originName="SBFL"/>
+      <item groupName="基本信息" name="TGFWQ_CZXT" originName="TGFWQ_CZXT"/>
+      <item groupName="基本信息" name="TGFWQ_PPXH" originName="TGFWQ_PPXH"/>
+      <item groupName="基本信息" name="TGFWQ_CPU" originName="TGFWQ_CPU"/>
+      <item groupName="基本信息" name="TGFWQ_NC" originName="TGFWQ_NC"/>
+      <item groupName="基本信息" name="XNJ_CPU" originName="XNJ_CPU"/>
+      <item groupName="基本信息" name="XNJ_NC" originName="XNJ_NC"/>
+      <item groupName="基本信息" name="XNJ_CZXT" originName="XNJ_CZXT"/>
+      <item groupName="基本信息" name="XNJ_SJYP" originName="XNJ_SJYP"/>
+      <item groupName="基本信息" name="TGFWQ_XH" originName="TGFWQ_XH"/>
+      <item name="YXQ" originName="YXQ">
+        <attribute name="web.form.hidden" value="false"/>
+      </item>
+      <item groupName="基本信息" name="TGFWQ_IP" originName="TGFWQ_IP"/>
+      <item groupName="基本信息" name="XNJ_IP" originName="XNJ_IP"/>
+      <item caption="申请时间" name="TJSJ" originName="TJSJ">
+        <attribute name="web.form.hidden" value="false"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

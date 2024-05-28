@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_YMSQ" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="申请人" colName="SQR" length="100" name="SQR" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="主机IP地址" colName="IP" length="100" name="IP" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="基础设施" colName="JCSSID" length="100" name="JCSSID" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="拟申请域名" colName="NSQYM" length="255" name="NSQYM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="分配域名" colName="FPYM" length="255" name="FPYM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="提交时间" colName="TJSJ" length="7" name="TJSJ" type="Datetime">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="用途" colName="YT" length="255" name="YT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="状态" colName="ZT" length="10" name="ZT" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

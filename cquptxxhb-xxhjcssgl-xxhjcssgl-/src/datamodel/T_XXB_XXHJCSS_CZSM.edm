@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model" dataSource="DB_EMAP_BIZ_BASE">
+  <dataModel name="T_XXB_XXHJCSS_CZSM" queryOrder="" type="table">
+    <item caption="WID" colName="WID" length="50" name="WID" pK="true" type="String">
+      <attribute name="enabled" value="true"/>
+      <attribute name="defaultValue" value="env:custom.guid"/>
+      <attribute name="prepare" value="checkWID_onlyEmpty"/>
+      <attribute name="defaultValueUseInModify" value="false"/>
+    </item>
+    <item caption="身份认证号" colName="SFRZH" length="50" name="SFRZH" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="是否弹框" colName="SFTK" length="255" name="SFTK" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item caption="所属页面" colName="SSYM" length="255" name="SSYM" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <rowFactors/>
+  </dataModel>
+</model:Model>

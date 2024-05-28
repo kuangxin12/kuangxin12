@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="bmbglb" order="WID,BGQGLY,BGHGLY,BGTJSJ,JCSSID,XEMAIL,XSJ,XBGDH,YEMAIL,YSJ,YBGDH,ZGH,XM">
+    <dataModelRef include="WID:WID,BGQGLY:BGQGLY,BGHGLY:BGHGLY,BGTJSJ:BGTJSJ,JCSSID:JCSSID,XEMAIL:XEMAIL,XSJ:XSJ,XBGDH:XBGDH,YEMAIL:YEMAIL,YSJ:YSJ,YBGDH:YBGDH" modelName="model:T_XXB_XXHJCSS_ZRRBGJL" tableAlias="T_XXB_XXHJCSS_ZRRBGJL">
+      <item name="WID" originName="WID"/>
+      <item name="BGQGLY" originName="BGQGLY"/>
+      <item name="BGHGLY" originName="BGHGLY"/>
+      <item name="BGTJSJ" originName="BGTJSJ"/>
+      <item name="JCSSID" originName="JCSSID"/>
+      <item name="XEMAIL" originName="XEMAIL"/>
+      <item name="XSJ" originName="XSJ"/>
+      <item name="XBGDH" originName="XBGDH"/>
+      <item name="YEMAIL" originName="YEMAIL"/>
+      <item name="YSJ" originName="YSJ"/>
+      <item name="YBGDH" originName="YBGDH"/>
+    </dataModelRef>
+    <dataModelRef include="ZGH:ZGH,XM:XM" modelName="model:T_JZG" tableAlias="T_JZG">
+      <item name="ZGH" originName="ZGH">
+        <attribute name="web.quickSearch" value="true"/>
+      </item>
+      <item name="XM" originName="XM">
+        <attribute name="web.quickSearch" value="true"/>
+      </item>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

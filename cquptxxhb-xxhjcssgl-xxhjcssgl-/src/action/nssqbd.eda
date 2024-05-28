@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmlns:model="http://www.wisedu.com/emap/model/model">
+  <actionModel caption="年审申请表单" displayRef="biz:nssqbd" name="nssqbd" paramRef="biz:nssqbd" paramRefInclude="WID,SQR" saveLog="true" totalCountType="AUTO" type="QUERY">
+    <sql>select #auto[select] &#xD;
+from nssqbd&#xD;
+#sub[and $]</sql>
+  </actionModel>
+</model:Model>

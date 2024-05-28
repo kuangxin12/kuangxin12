@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="whsssou" order="WID,SQR,WHRYXM,LXDH,JHWHSJ,JCSSID,LY">
+    <dataModelRef include="WID:WID,SQR:SQR,WHRYXM:WHRYXM,JHWHSJ:JHWHSJ,JCSSID:JCSSID,LY:LY,LXDH:LXDH" modelName="model:T_XXB_XXHJCSS_WH" tableAlias="T_XXB_XXHJCSS_WH">
+      <item name="WID" originName="WID"/>
+      <item name="SQR" originName="SQR"/>
+      <item name="WHRYXM" originName="WHRYXM">
+        <attribute name="web.quickSearch" value="true"/>
+      </item>
+      <item name="JHWHSJ" originName="JHWHSJ">
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="pattern" value="yyyy-MM-dd"/>
+        <attribute name="web.format" value="yyyy-MM-dd"/>
+        <attribute name="web.search.xtype" value="date-local"/>
+        <attribute name="web.xtype" value="date-local"/>
+        <attribute name="web.grid.width" value="120px"/>
+        <attribute name="web.form.required" value="true"/>
+      </item>
+      <item name="JCSSID" originName="JCSSID">
+        <attribute name="web.quickSearch" value="true"/>
+        <attribute name="builder" value="m_value_equal"/>
+        <attribute name="builderList" value="cbl_m_List"/>
+        <attribute name="web.xtype" value="tree"/>
+        <attribute name="web.search.quickSearchXtype" value="multi-tree"/>
+      </item>
+      <item name="LY" originName="LY"/>
+      <item name="LXDH" originName="LXDH"/>
+    </dataModelRef>
+  </bizModel>
+</model:Model>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:model="http://www.wisedu.com/emap/model/model">
+  <bizModel name="jzgbd" order="WID,ZGH,XM,SZDWDM,queryopt,name,id">
+    <dataModelRef include="WID:WID,ZGH:ZGH,XM:XM,SZDWDM:SZDWDM" modelName="model:T_JZG" tableAlias="T_JZG">
+      <item name="WID" originName="WID"/>
+      <item name="ZGH" originName="ZGH"/>
+      <item name="XM" originName="XM"/>
+      <item name="SZDWDM" originName="SZDWDM"/>
+    </dataModelRef>
+    <item colName="T_JZG.XM" custom="true" name="queryopt" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item colName="T_JZG.ZGH" custom="true" name="name" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+    <item colName="T_JZG.XM" custom="true" name="id" type="String">
+      <attribute name="enabled" value="true"/>
+    </item>
+  </bizModel>
+</model:Model>

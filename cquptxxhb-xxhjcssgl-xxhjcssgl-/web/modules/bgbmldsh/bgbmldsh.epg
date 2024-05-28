@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page:Pages xmlns:page="http://www.wisedu.com/emap/model/page">
+  <page name="bgbmldsh" desc="变更部门领导审核" permissionLevel="">
+    <actions>
+      <action name="T_XXB_XXHJCSS_ZRRBGJL_QUERY" ref="model:T_XXB_XXHJCSS_ZRRBGJL.QUERY" url="src/datamodel/T_XXB_XXHJCSS_ZRRBGJL.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgshxx" ref="action:bgshxx" url="src/action/bgshxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bmbglbcx" ref="action:bmbglbcx" url="src/action/bmbglbcx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgjcssxx" ref="action:bgjcssxx" url="src/action/bgjcssxx.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_QUERY" ref="model:T_XXB_XXHJCSS_JBXX.QUERY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="T_XXB_XXHJCSS_JBXX_MODIFY" ref="model:T_XXB_XXHJCSS_JBXX.MODIFY" url="src/datamodel/T_XXB_XXHJCSS_JBXX.edm" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="xgzt" ref="action:xgzt" url="src/action/xgzt.eda" multiple="false" prjRef="xxhjcssgl" canAccess="true"/>
+      <action name="bgshxxfz" ref="action:bgshxxfz" url="src/action/bgshxxfz.eda" multiple="true" prjRef="xxhjcssgl" canAccess="true"/>
+    </actions>
+  </page>
+</page:Pages>
